@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{72DC21B1-F2D0-4858-9657-44EF571E43D2}|src\\Forma.Application\\Forma.Application.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app\\src\\forma.application\\forma.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{72DC21B1-F2D0-4858-9657-44EF571E43D2}|src\\Forma.Application\\Forma.Application.csproj|solutionrelative:src\\forma.application\\forma.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCB0C57-BF9A-44AC-A316-62EB6358FEFA}|tests\\Forma.ArchitectureTests\\Forma.ArchitectureTests.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app\\tests\\forma.architecturetests\\forma.architecturetests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BFCB0C57-BF9A-44AC-A316-62EB6358FEFA}|tests\\Forma.ArchitectureTests\\Forma.ArchitectureTests.csproj|solutionrelative:tests\\forma.architecturetests\\forma.architecturetests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Forma.Application",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App\\src\\Forma.Application\\Forma.Application.csproj",
+              "RelativeDocumentMoniker": "src\\Forma.Application\\Forma.Application.csproj",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App\\src\\Forma.Application\\Forma.Application.csproj",
+              "RelativeToolTip": "src\\Forma.Application\\Forma.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-05T21:03:50.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Forma.ArchitectureTests",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App\\tests\\Forma.ArchitectureTests\\Forma.ArchitectureTests.csproj",
+              "RelativeDocumentMoniker": "tests\\Forma.ArchitectureTests\\Forma.ArchitectureTests.csproj",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App\\tests\\Forma.ArchitectureTests\\Forma.ArchitectureTests.csproj",
+              "RelativeToolTip": "tests\\Forma.ArchitectureTests\\Forma.ArchitectureTests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-05T21:03:39.57Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

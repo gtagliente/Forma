@@ -1,0 +1,17 @@
+### Register a new customer
+
+POST http://localhost:56570/api/customers HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "gender": "male",
+  "email": "john_doe@gmail.com",
+  "dateOfBirth": "1990-01-01"
+}
+
+### Gets a list of all customers
+
+GET http://localhost:56570/api/customers HTTP/1.1
+content-type: application/json

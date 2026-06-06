@@ -1,0 +1,994 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F859B6D3-98E4-F114-EE4A-185A98BB4589}|src\\Forma.CoreContext\\Forma.CoreContext.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.corecontext\\forma.corecontext.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F859B6D3-98E4-F114-EE4A-185A98BB4589}|src\\Forma.CoreContext\\Forma.CoreContext.csproj|solutionrelative:src\\forma.corecontext\\forma.corecontext.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.publicapi\\extensions\\resultextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|solutionrelative:src\\forma.publicapi\\extensions\\resultextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24EF58F6-CBF8-4910-A17C-E8DE7ED96A87}|docker-compose.dcproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{24EF58F6-CBF8-4910-A17C-E8DE7ED96A87}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.publicapi\\extensions\\servicescollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|solutionrelative:src\\forma.publicapi\\extensions\\servicescollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.publicapi\\filters\\exceptions\\domainexceptiontoactionresultfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|solutionrelative:src\\forma.publicapi\\filters\\exceptions\\domainexceptiontoactionresultfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.publicapi\\services\\factories\\domainexceptiontoactionresultfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|solutionrelative:src\\forma.publicapi\\services\\factories\\domainexceptiontoactionresultfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.publicapi\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|solutionrelative:src\\forma.publicapi\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.publicapi\\models\\apiresponset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|solutionrelative:src\\forma.publicapi\\models\\apiresponset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FDA8D84-9E01-4424-872E-ABAABC3965A9}|src\\Forma.Domain\\Forma.Domain.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.domain\\configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FDA8D84-9E01-4424-872E-ABAABC3965A9}|src\\Forma.Domain\\Forma.Domain.csproj|solutionrelative:src\\forma.domain\\configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FDA8D84-9E01-4424-872E-ABAABC3965A9}|src\\Forma.Domain\\Forma.Domain.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.domain\\valueobjects\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FDA8D84-9E01-4424-872E-ABAABC3965A9}|src\\Forma.Domain\\Forma.Domain.csproj|solutionrelative:src\\forma.domain\\valueobjects\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72DC21B1-F2D0-4858-9657-44EF571E43D2}|src\\Forma.Application\\Forma.Application.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.application\\exercise\\handlers\\createexerciseresourcecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72DC21B1-F2D0-4858-9657-44EF571E43D2}|src\\Forma.Application\\Forma.Application.csproj|solutionrelative:src\\forma.application\\exercise\\handlers\\createexerciseresourcecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FDA8D84-9E01-4424-872E-ABAABC3965A9}|src\\Forma.Domain\\Forma.Domain.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.domain\\entities\\exerciseaggregate\\exercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FDA8D84-9E01-4424-872E-ABAABC3965A9}|src\\Forma.Domain\\Forma.Domain.csproj|solutionrelative:src\\forma.domain\\entities\\exerciseaggregate\\exercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FDA8D84-9E01-4424-872E-ABAABC3965A9}|src\\Forma.Domain\\Forma.Domain.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.domain\\entities\\exerciseaggregate\\exerciseresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FDA8D84-9E01-4424-872E-ABAABC3965A9}|src\\Forma.Domain\\Forma.Domain.csproj|solutionrelative:src\\forma.domain\\entities\\exerciseaggregate\\exerciseresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.publicapi\\extensions\\webapplicationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|solutionrelative:src\\forma.publicapi\\extensions\\webapplicationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BA06288-8446-4099-9341-D213A835763C}|tests\\Forma.IntegrationTests\\Forma.IntegrationTests.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\tests\\forma.integrationtests\\controllers\\v1\\exercisescontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BA06288-8446-4099-9341-D213A835763C}|tests\\Forma.IntegrationTests\\Forma.IntegrationTests.csproj|solutionrelative:tests\\forma.integrationtests\\controllers\\v1\\exercisescontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FDA8D84-9E01-4424-872E-ABAABC3965A9}|src\\Forma.Domain\\Forma.Domain.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.domain\\entities\\exerciseaggregate\\valueobjects\\musclegroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FDA8D84-9E01-4424-872E-ABAABC3965A9}|src\\Forma.Domain\\Forma.Domain.csproj|solutionrelative:src\\forma.domain\\entities\\exerciseaggregate\\valueobjects\\musclegroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11296DB2-D948-4ADF-A4CE-3F2BFF627478}|src\\Forma.Infrastructure\\Forma.Infrastructure.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.infrastructure\\data\\extensions\\entitytypebuilderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11296DB2-D948-4ADF-A4CE-3F2BFF627478}|src\\Forma.Infrastructure\\Forma.Infrastructure.csproj|solutionrelative:src\\forma.infrastructure\\data\\extensions\\entitytypebuilderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DAF7B63-F776-4466-908D-56FD1FD02F42}|Solution Items{1DAF7B63-F776-4466-908D-56FD1FD02F42}|C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\analisi.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1DAF7B63-F776-4466-908D-56FD1FD02F42}|Solution Items{1DAF7B63-F776-4466-908D-56FD1FD02F42}|solutionrelative:analisi.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DAF7B63-F776-4466-908D-56FD1FD02F42}|Solution Items{1DAF7B63-F776-4466-908D-56FD1FD02F42}|C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1DAF7B63-F776-4466-908D-56FD1FD02F42}|Solution Items{1DAF7B63-F776-4466-908D-56FD1FD02F42}|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.publicapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|solutionrelative:src\\forma.publicapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.publicapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|solutionrelative:src\\forma.publicapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24EF58F6-CBF8-4910-A17C-E8DE7ED96A87}|docker-compose.dcproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{24EF58F6-CBF8-4910-A17C-E8DE7ED96A87}|docker-compose.dcproj|solutionrelative:launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.publicapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|solutionrelative:src\\forma.publicapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11296DB2-D948-4ADF-A4CE-3F2BFF627478}|src\\Forma.Infrastructure\\Forma.Infrastructure.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.infrastructure\\data\\mappings\\exerciseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11296DB2-D948-4ADF-A4CE-3F2BFF627478}|src\\Forma.Infrastructure\\Forma.Infrastructure.csproj|solutionrelative:src\\forma.infrastructure\\data\\mappings\\exerciseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11296DB2-D948-4ADF-A4CE-3F2BFF627478}|src\\Forma.Infrastructure\\Forma.Infrastructure.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.infrastructure\\data\\mappings\\exerciseresourceconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11296DB2-D948-4ADF-A4CE-3F2BFF627478}|src\\Forma.Infrastructure\\Forma.Infrastructure.csproj|solutionrelative:src\\forma.infrastructure\\data\\mappings\\exerciseresourceconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11296DB2-D948-4ADF-A4CE-3F2BFF627478}|src\\Forma.Infrastructure\\Forma.Infrastructure.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.infrastructure\\data\\mappings\\eventstoreconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11296DB2-D948-4ADF-A4CE-3F2BFF627478}|src\\Forma.Infrastructure\\Forma.Infrastructure.csproj|solutionrelative:src\\forma.infrastructure\\data\\mappings\\eventstoreconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FDA8D84-9E01-4424-872E-ABAABC3965A9}|src\\Forma.Domain\\Forma.Domain.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.domain\\entities\\exerciseaggregate\\exerciseid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FDA8D84-9E01-4424-872E-ABAABC3965A9}|src\\Forma.Domain\\Forma.Domain.csproj|solutionrelative:src\\forma.domain\\entities\\exerciseaggregate\\exerciseid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.publicapi\\migrations\\20260321194545_exerciseresourcemigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|solutionrelative:src\\forma.publicapi\\migrations\\20260321194545_exerciseresourcemigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.publicapi\\migrations\\20251223145015_staticvalueobjsmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|solutionrelative:src\\forma.publicapi\\migrations\\20251223145015_staticvalueobjsmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.publicapi\\migrations\\writedbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|solutionrelative:src\\forma.publicapi\\migrations\\writedbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{543135A3-8D5E-D4FE-2FC5-E98BAEFBBABD}|src\\Forma.CoreInfrastructure\\Forma.CoreInfrastructure.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.coreinfrastructure\\abstractions\\iexercisewriteonlyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{543135A3-8D5E-D4FE-2FC5-E98BAEFBBABD}|src\\Forma.CoreInfrastructure\\Forma.CoreInfrastructure.csproj|solutionrelative:src\\forma.coreinfrastructure\\abstractions\\iexercisewriteonlyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72DC21B1-F2D0-4858-9657-44EF571E43D2}|src\\Forma.Application\\Forma.Application.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.application\\exercise\\handlers\\createexercisecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72DC21B1-F2D0-4858-9657-44EF571E43D2}|src\\Forma.Application\\Forma.Application.csproj|solutionrelative:src\\forma.application\\exercise\\handlers\\createexercisecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F859B6D3-98E4-F114-EE4A-185A98BB4589}|src\\Forma.CoreContext\\Forma.CoreContext.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.corecontext\\sharedkernel\\ibaseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F859B6D3-98E4-F114-EE4A-185A98BB4589}|src\\Forma.CoreContext\\Forma.CoreContext.csproj|solutionrelative:src\\forma.corecontext\\sharedkernel\\ibaseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F859B6D3-98E4-F114-EE4A-185A98BB4589}|src\\Forma.CoreContext\\Forma.CoreContext.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.corecontext\\sharedkernel\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F859B6D3-98E4-F114-EE4A-185A98BB4589}|src\\Forma.CoreContext\\Forma.CoreContext.csproj|solutionrelative:src\\forma.corecontext\\sharedkernel\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F859B6D3-98E4-F114-EE4A-185A98BB4589}|src\\Forma.CoreContext\\Forma.CoreContext.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.corecontext\\sharedkernel\\ientity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F859B6D3-98E4-F114-EE4A-185A98BB4589}|src\\Forma.CoreContext\\Forma.CoreContext.csproj|solutionrelative:src\\forma.corecontext\\sharedkernel\\ientity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11296DB2-D948-4ADF-A4CE-3F2BFF627478}|src\\Forma.Infrastructure\\Forma.Infrastructure.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.infrastructure\\data\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11296DB2-D948-4ADF-A4CE-3F2BFF627478}|src\\Forma.Infrastructure\\Forma.Infrastructure.csproj|solutionrelative:src\\forma.infrastructure\\data\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11296DB2-D948-4ADF-A4CE-3F2BFF627478}|src\\Forma.Infrastructure\\Forma.Infrastructure.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.infrastructure\\configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11296DB2-D948-4ADF-A4CE-3F2BFF627478}|src\\Forma.Infrastructure\\Forma.Infrastructure.csproj|solutionrelative:src\\forma.infrastructure\\configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11296DB2-D948-4ADF-A4CE-3F2BFF627478}|src\\Forma.Infrastructure\\Forma.Infrastructure.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.infrastructure\\data\\repositories\\exercisewriteonlyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11296DB2-D948-4ADF-A4CE-3F2BFF627478}|src\\Forma.Infrastructure\\Forma.Infrastructure.csproj|solutionrelative:src\\forma.infrastructure\\data\\repositories\\exercisewriteonlyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FDA8D84-9E01-4424-872E-ABAABC3965A9}|src\\Forma.Domain\\Forma.Domain.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.domain\\entities\\exerciseaggregate\\events\\exercisebaseevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FDA8D84-9E01-4424-872E-ABAABC3965A9}|src\\Forma.Domain\\Forma.Domain.csproj|solutionrelative:src\\forma.domain\\entities\\exerciseaggregate\\events\\exercisebaseevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FDA8D84-9E01-4424-872E-ABAABC3965A9}|src\\Forma.Domain\\Forma.Domain.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.domain\\entities\\exerciseaggregate\\events\\exerciseupdatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FDA8D84-9E01-4424-872E-ABAABC3965A9}|src\\Forma.Domain\\Forma.Domain.csproj|solutionrelative:src\\forma.domain\\entities\\exerciseaggregate\\events\\exerciseupdatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FDA8D84-9E01-4424-872E-ABAABC3965A9}|src\\Forma.Domain\\Forma.Domain.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.domain\\entities\\exerciseaggregate\\events\\exercisedeletedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FDA8D84-9E01-4424-872E-ABAABC3965A9}|src\\Forma.Domain\\Forma.Domain.csproj|solutionrelative:src\\forma.domain\\entities\\exerciseaggregate\\events\\exercisedeletedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FDA8D84-9E01-4424-872E-ABAABC3965A9}|src\\Forma.Domain\\Forma.Domain.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.domain\\entities\\exerciseaggregate\\events\\exercisecreatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FDA8D84-9E01-4424-872E-ABAABC3965A9}|src\\Forma.Domain\\Forma.Domain.csproj|solutionrelative:src\\forma.domain\\entities\\exerciseaggregate\\events\\exercisecreatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F859B6D3-98E4-F114-EE4A-185A98BB4589}|src\\Forma.CoreContext\\Forma.CoreContext.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.corecontext\\sharedkernel\\baseevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F859B6D3-98E4-F114-EE4A-185A98BB4589}|src\\Forma.CoreContext\\Forma.CoreContext.csproj|solutionrelative:src\\forma.corecontext\\sharedkernel\\baseevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F859B6D3-98E4-F114-EE4A-185A98BB4589}|src\\Forma.CoreContext\\Forma.CoreContext.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.corecontext\\sharedkernel\\eventstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F859B6D3-98E4-F114-EE4A-185A98BB4589}|src\\Forma.CoreContext\\Forma.CoreContext.csproj|solutionrelative:src\\forma.corecontext\\sharedkernel\\eventstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24EF58F6-CBF8-4910-A17C-E8DE7ED96A87}|docker-compose.dcproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\docker-compose.dcproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{24EF58F6-CBF8-4910-A17C-E8DE7ED96A87}|docker-compose.dcproj|solutionrelative:docker-compose.dcproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.publicapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|solutionrelative:src\\forma.publicapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.publicapi\\migrations\\20251223125847_musclegroupsmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|solutionrelative:src\\forma.publicapi\\migrations\\20251223125847_musclegroupsmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.publicapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|solutionrelative:src\\forma.publicapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.publicapi\\appsettings.integrationtesting.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|solutionrelative:src\\forma.publicapi\\appsettings.integrationtesting.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DAF7B63-F776-4466-908D-56FD1FD02F42}|Solution Items{1DAF7B63-F776-4466-908D-56FD1FD02F42}|C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\Directory.Packages.props||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1DAF7B63-F776-4466-908D-56FD1FD02F42}|Solution Items{1DAF7B63-F776-4466-908D-56FD1FD02F42}|solutionrelative:Directory.Packages.props||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.publicapi\\forma.publicapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E94C4296-DC64-4C22-87A1-B5A054FAADAC}|src\\Forma.PublicApi\\Forma.PublicApi.csproj|solutionrelative:src\\forma.publicapi\\forma.publicapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2A82AAD-0348-4B29-B7E7-E36509EE068C}|src\\Forma.Query\\Forma.Query.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.query\\profiles\\eventtoquerymodelprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2A82AAD-0348-4B29-B7E7-E36509EE068C}|src\\Forma.Query\\Forma.Query.csproj|solutionrelative:src\\forma.query\\profiles\\eventtoquerymodelprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2A82AAD-0348-4B29-B7E7-E36509EE068C}|src\\Forma.Query\\Forma.Query.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.query\\eventhandlers\\exerciseeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2A82AAD-0348-4B29-B7E7-E36509EE068C}|src\\Forma.Query\\Forma.Query.csproj|solutionrelative:src\\forma.query\\eventhandlers\\exerciseeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2A82AAD-0348-4B29-B7E7-E36509EE068C}|src\\Forma.Query\\Forma.Query.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.query\\forma.query.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C2A82AAD-0348-4B29-B7E7-E36509EE068C}|src\\Forma.Query\\Forma.Query.csproj|solutionrelative:src\\forma.query\\forma.query.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BA06288-8446-4099-9341-D213A835763C}|tests\\Forma.IntegrationTests\\Forma.IntegrationTests.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\tests\\forma.integrationtests\\forma.integrationtests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7BA06288-8446-4099-9341-D213A835763C}|tests\\Forma.IntegrationTests\\Forma.IntegrationTests.csproj|solutionrelative:tests\\forma.integrationtests\\forma.integrationtests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DAF7B63-F776-4466-908D-56FD1FD02F42}|Solution Items{1DAF7B63-F776-4466-908D-56FD1FD02F42}|C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\requests.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{1DAF7B63-F776-4466-908D-56FD1FD02F42}|Solution Items{1DAF7B63-F776-4466-908D-56FD1FD02F42}|solutionrelative:requests.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72DC21B1-F2D0-4858-9657-44EF571E43D2}|src\\Forma.Application\\Forma.Application.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.application\\forma.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{72DC21B1-F2D0-4858-9657-44EF571E43D2}|src\\Forma.Application\\Forma.Application.csproj|solutionrelative:src\\forma.application\\forma.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{543135A3-8D5E-D4FE-2FC5-E98BAEFBBABD}|src\\Forma.CoreInfrastructure\\Forma.CoreInfrastructure.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.coreinfrastructure\\forma.coreinfrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{543135A3-8D5E-D4FE-2FC5-E98BAEFBBABD}|src\\Forma.CoreInfrastructure\\Forma.CoreInfrastructure.csproj|solutionrelative:src\\forma.coreinfrastructure\\forma.coreinfrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11296DB2-D948-4ADF-A4CE-3F2BFF627478}|src\\Forma.Infrastructure\\Forma.Infrastructure.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\src\\forma.infrastructure\\forma.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{11296DB2-D948-4ADF-A4CE-3F2BFF627478}|src\\Forma.Infrastructure\\Forma.Infrastructure.csproj|solutionrelative:src\\forma.infrastructure\\forma.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCB0C57-BF9A-44AC-A316-62EB6358FEFA}|tests\\Forma.ArchitectureTests\\Forma.ArchitectureTests.csproj|c:\\users\\gianl\\desktop\\gianluca\\git_sources\\forma2\\forma.app - copy\\tests\\forma.architecturetests\\forma.architecturetests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BFCB0C57-BF9A-44AC-A316-62EB6358FEFA}|tests\\Forma.ArchitectureTests\\Forma.ArchitectureTests.csproj|solutionrelative:tests\\forma.architecturetests\\forma.architecturetests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Forma.CoreContext",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.CoreContext\\Forma.CoreContext.csproj",
+              "RelativeDocumentMoniker": "src\\Forma.CoreContext\\Forma.CoreContext.csproj",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.CoreContext\\Forma.CoreContext.csproj",
+              "RelativeToolTip": "src\\Forma.CoreContext\\Forma.CoreContext.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-02T10:25:34.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-05-10T14:11:58.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResultExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Extensions\\ResultExtensions.cs",
+              "RelativeDocumentMoniker": "src\\Forma.PublicApi\\Extensions\\ResultExtensions.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Extensions\\ResultExtensions.cs",
+              "RelativeToolTip": "src\\Forma.PublicApi\\Extensions\\ResultExtensions.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAjwD0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T13:54:05.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServicesCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Extensions\\ServicesCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "src\\Forma.PublicApi\\Extensions\\ServicesCollectionExtensions.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Extensions\\ServicesCollectionExtensions.cs",
+              "RelativeToolTip": "src\\Forma.PublicApi\\Extensions\\ServicesCollectionExtensions.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T13:54:52.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DomainExceptionToActionResultFilter.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Filters\\Exceptions\\DomainExceptionToActionResultFilter.cs",
+              "RelativeDocumentMoniker": "src\\Forma.PublicApi\\Filters\\Exceptions\\DomainExceptionToActionResultFilter.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Filters\\Exceptions\\DomainExceptionToActionResultFilter.cs",
+              "RelativeToolTip": "src\\Forma.PublicApi\\Filters\\Exceptions\\DomainExceptionToActionResultFilter.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAWwBcAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T13:45:16.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApiResponseT.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Models\\ApiResponseT.cs",
+              "RelativeDocumentMoniker": "src\\Forma.PublicApi\\Models\\ApiResponseT.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Models\\ApiResponseT.cs",
+              "RelativeToolTip": "src\\Forma.PublicApi\\Models\\ApiResponseT.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T13:42:28.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Models\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "src\\Forma.PublicApi\\Models\\ApiResponse.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Models\\ApiResponse.cs",
+              "RelativeToolTip": "src\\Forma.PublicApi\\Models\\ApiResponse.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwAcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T13:42:26.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DomainExceptionToActionResultFactory.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Services\\Factories\\DomainExceptionToActionResultFactory.cs",
+              "RelativeDocumentMoniker": "src\\Forma.PublicApi\\Services\\Factories\\DomainExceptionToActionResultFactory.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Services\\Factories\\DomainExceptionToActionResultFactory.cs",
+              "RelativeToolTip": "src\\Forma.PublicApi\\Services\\Factories\\DomainExceptionToActionResultFactory.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAewBQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T13:42:04.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConfigureServices.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Domain\\ConfigureServices.cs",
+              "RelativeDocumentMoniker": "src\\Forma.Domain\\ConfigureServices.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Domain\\ConfigureServices.cs",
+              "RelativeToolTip": "src\\Forma.Domain\\ConfigureServices.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T13:41:46.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Email.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Domain\\ValueObjects\\Email.cs",
+              "RelativeDocumentMoniker": "src\\Forma.Domain\\ValueObjects\\Email.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Domain\\ValueObjects\\Email.cs",
+              "RelativeToolTip": "src\\Forma.Domain\\ValueObjects\\Email.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T13:41:44.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WebApplicationExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Extensions\\WebApplicationExtensions.cs",
+              "RelativeDocumentMoniker": "src\\Forma.PublicApi\\Extensions\\WebApplicationExtensions.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Extensions\\WebApplicationExtensions.cs",
+              "RelativeToolTip": "src\\Forma.PublicApi\\Extensions\\WebApplicationExtensions.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAgwEEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T17:23:00.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Exercise.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Domain\\Entities\\ExerciseAggregate\\Exercise.cs",
+              "RelativeDocumentMoniker": "src\\Forma.Domain\\Entities\\ExerciseAggregate\\Exercise.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Domain\\Entities\\ExerciseAggregate\\Exercise.cs",
+              "RelativeToolTip": "src\\Forma.Domain\\Entities\\ExerciseAggregate\\Exercise.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAIAwwGYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T17:39:46.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ExerciseResource.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Domain\\Entities\\ExerciseAggregate\\ExerciseResource.cs",
+              "RelativeDocumentMoniker": "src\\Forma.Domain\\Entities\\ExerciseAggregate\\ExerciseResource.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Domain\\Entities\\ExerciseAggregate\\ExerciseResource.cs",
+              "RelativeToolTip": "src\\Forma.Domain\\Entities\\ExerciseAggregate\\ExerciseResource.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAUwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T18:24:41.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "analisi.txt",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\analisi.txt",
+              "RelativeDocumentMoniker": "analisi.txt",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\analisi.txt",
+              "RelativeToolTip": "analisi.txt",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-03-21T17:26:17.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateExerciseResourceCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Application\\Exercise\\Handlers\\CreateExerciseResourceCommandHandler.cs",
+              "RelativeDocumentMoniker": "src\\Forma.Application\\Exercise\\Handlers\\CreateExerciseResourceCommandHandler.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Application\\Exercise\\Handlers\\CreateExerciseResourceCommandHandler.cs",
+              "RelativeToolTip": "src\\Forma.Application\\Exercise\\Handlers\\CreateExerciseResourceCommandHandler.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAD4vykAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T19:32:39.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EntityTypeBuilderExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Infrastructure\\Data\\Extensions\\EntityTypeBuilderExtensions.cs",
+              "RelativeDocumentMoniker": "src\\Forma.Infrastructure\\Data\\Extensions\\EntityTypeBuilderExtensions.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Infrastructure\\Data\\Extensions\\EntityTypeBuilderExtensions.cs",
+              "RelativeToolTip": "src\\Forma.Infrastructure\\Data\\Extensions\\EntityTypeBuilderExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T18:55:59.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\.env",
+              "RelativeDocumentMoniker": ".env",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\.env",
+              "RelativeToolTip": ".env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-19T21:35:54.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ExercisesControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\tests\\Forma.IntegrationTests\\Controllers\\V1\\ExercisesControllerTests.cs",
+              "RelativeDocumentMoniker": "tests\\Forma.IntegrationTests\\Controllers\\V1\\ExercisesControllerTests.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\tests\\Forma.IntegrationTests\\Controllers\\V1\\ExercisesControllerTests.cs",
+              "RelativeToolTip": "tests\\Forma.IntegrationTests\\Controllers\\V1\\ExercisesControllerTests.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAArwCEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T10:00:42.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MuscleGroup.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Domain\\Entities\\ExerciseAggregate\\ValueObjects\\MuscleGroup.cs",
+              "RelativeDocumentMoniker": "src\\Forma.Domain\\Entities\\ExerciseAggregate\\ValueObjects\\MuscleGroup.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Domain\\Entities\\ExerciseAggregate\\ValueObjects\\MuscleGroup.cs",
+              "RelativeToolTip": "src\\Forma.Domain\\Entities\\ExerciseAggregate\\ValueObjects\\MuscleGroup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T09:06:41.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Forma.PublicApi\\Program.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Program.cs",
+              "RelativeToolTip": "src\\Forma.PublicApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T08:50:54.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IExerciseWriteOnlyRepository.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.CoreInfrastructure\\Abstractions\\IExerciseWriteOnlyRepository.cs",
+              "RelativeDocumentMoniker": "src\\Forma.CoreInfrastructure\\Abstractions\\IExerciseWriteOnlyRepository.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.CoreInfrastructure\\Abstractions\\IExerciseWriteOnlyRepository.cs",
+              "RelativeToolTip": "src\\Forma.CoreInfrastructure\\Abstractions\\IExerciseWriteOnlyRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T19:32:53.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "src\\Forma.PublicApi\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\appsettings.Development.json",
+              "RelativeToolTip": "src\\Forma.PublicApi\\appsettings.Development.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAByAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-19T21:33:12.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\launchSettings.json",
+              "RelativeDocumentMoniker": "launchSettings.json",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\launchSettings.json",
+              "RelativeToolTip": "launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-10T08:33:48.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ExerciseConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Infrastructure\\Data\\Mappings\\ExerciseConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\Forma.Infrastructure\\Data\\Mappings\\ExerciseConfiguration.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Infrastructure\\Data\\Mappings\\ExerciseConfiguration.cs",
+              "RelativeToolTip": "src\\Forma.Infrastructure\\Data\\Mappings\\ExerciseConfiguration.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAUwBIAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T17:41:15.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "web.config",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\web.config",
+              "RelativeDocumentMoniker": "src\\Forma.PublicApi\\web.config",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\web.config",
+              "RelativeToolTip": "src\\Forma.PublicApi\\web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-03-21T17:25:47.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ExerciseResourceConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Infrastructure\\Data\\Mappings\\ExerciseResourceConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\Forma.Infrastructure\\Data\\Mappings\\ExerciseResourceConfiguration.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Infrastructure\\Data\\Mappings\\ExerciseResourceConfiguration.cs",
+              "RelativeToolTip": "src\\Forma.Infrastructure\\Data\\Mappings\\ExerciseResourceConfiguration.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T08:11:54.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "EventStoreConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Infrastructure\\Data\\Mappings\\EventStoreConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\Forma.Infrastructure\\Data\\Mappings\\EventStoreConfiguration.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Infrastructure\\Data\\Mappings\\EventStoreConfiguration.cs",
+              "RelativeToolTip": "src\\Forma.Infrastructure\\Data\\Mappings\\EventStoreConfiguration.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T08:21:16.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ExerciseId.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Domain\\Entities\\ExerciseAggregate\\ExerciseId.cs",
+              "RelativeDocumentMoniker": "src\\Forma.Domain\\Entities\\ExerciseAggregate\\ExerciseId.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Domain\\Entities\\ExerciseAggregate\\ExerciseId.cs",
+              "RelativeToolTip": "src\\Forma.Domain\\Entities\\ExerciseAggregate\\ExerciseId.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T17:39:41.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "WriteDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Migrations\\WriteDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "src\\Forma.PublicApi\\Migrations\\WriteDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Migrations\\WriteDbContextModelSnapshot.cs",
+              "RelativeToolTip": "src\\Forma.PublicApi\\Migrations\\WriteDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T19:34:41.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20251223145015_StaticValueObjsMigration.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Migrations\\20251223145015_StaticValueObjsMigration.cs",
+              "RelativeDocumentMoniker": "src\\Forma.PublicApi\\Migrations\\20251223145015_StaticValueObjsMigration.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Migrations\\20251223145015_StaticValueObjsMigration.cs",
+              "RelativeToolTip": "src\\Forma.PublicApi\\Migrations\\20251223145015_StaticValueObjsMigration.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T19:44:26.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20260321194545_ExerciseResourceMigration.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Migrations\\20260321194545_ExerciseResourceMigration.cs",
+              "RelativeDocumentMoniker": "src\\Forma.PublicApi\\Migrations\\20260321194545_ExerciseResourceMigration.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Migrations\\20260321194545_ExerciseResourceMigration.cs",
+              "RelativeToolTip": "src\\Forma.PublicApi\\Migrations\\20260321194545_ExerciseResourceMigration.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T19:45:49.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IBaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.CoreContext\\SharedKernel\\IBaseEntity.cs",
+              "RelativeDocumentMoniker": "src\\Forma.CoreContext\\SharedKernel\\IBaseEntity.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.CoreContext\\SharedKernel\\IBaseEntity.cs",
+              "RelativeToolTip": "src\\Forma.CoreContext\\SharedKernel\\IBaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T19:15:58.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.CoreContext\\SharedKernel\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "src\\Forma.CoreContext\\SharedKernel\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.CoreContext\\SharedKernel\\BaseEntity.cs",
+              "RelativeToolTip": "src\\Forma.CoreContext\\SharedKernel\\BaseEntity.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAADwvzEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T17:45:04.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CreateExerciseCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Application\\Exercise\\Handlers\\CreateExerciseCommandHandler.cs",
+              "RelativeDocumentMoniker": "src\\Forma.Application\\Exercise\\Handlers\\CreateExerciseCommandHandler.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Application\\Exercise\\Handlers\\CreateExerciseCommandHandler.cs",
+              "RelativeToolTip": "src\\Forma.Application\\Exercise\\Handlers\\CreateExerciseCommandHandler.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAQwDIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T19:01:25.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ConfigureServices.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Infrastructure\\ConfigureServices.cs",
+              "RelativeDocumentMoniker": "src\\Forma.Infrastructure\\ConfigureServices.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Infrastructure\\ConfigureServices.cs",
+              "RelativeToolTip": "src\\Forma.Infrastructure\\ConfigureServices.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAApwDMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T19:03:20.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ExerciseWriteOnlyRepository.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Infrastructure\\Data\\Repositories\\ExerciseWriteOnlyRepository.cs",
+              "RelativeDocumentMoniker": "src\\Forma.Infrastructure\\Data\\Repositories\\ExerciseWriteOnlyRepository.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Infrastructure\\Data\\Repositories\\ExerciseWriteOnlyRepository.cs",
+              "RelativeToolTip": "src\\Forma.Infrastructure\\Data\\Repositories\\ExerciseWriteOnlyRepository.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAApwA8AAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T19:01:21.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Infrastructure\\Data\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "src\\Forma.Infrastructure\\Data\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Infrastructure\\Data\\UnitOfWork.cs",
+              "RelativeToolTip": "src\\Forma.Infrastructure\\Data\\UnitOfWork.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAlwFAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T17:54:25.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IEntity.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.CoreContext\\SharedKernel\\IEntity.cs",
+              "RelativeDocumentMoniker": "src\\Forma.CoreContext\\SharedKernel\\IEntity.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.CoreContext\\SharedKernel\\IEntity.cs",
+              "RelativeToolTip": "src\\Forma.CoreContext\\SharedKernel\\IEntity.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAhwA0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T17:44:45.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ExerciseBaseEvent.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Domain\\Entities\\ExerciseAggregate\\Events\\ExerciseBaseEvent.cs",
+              "RelativeDocumentMoniker": "src\\Forma.Domain\\Entities\\ExerciseAggregate\\Events\\ExerciseBaseEvent.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Domain\\Entities\\ExerciseAggregate\\Events\\ExerciseBaseEvent.cs",
+              "RelativeToolTip": "src\\Forma.Domain\\Entities\\ExerciseAggregate\\Events\\ExerciseBaseEvent.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T18:08:52.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ExerciseUpdatedEvent.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Domain\\Entities\\ExerciseAggregate\\Events\\ExerciseUpdatedEvent.cs",
+              "RelativeDocumentMoniker": "src\\Forma.Domain\\Entities\\ExerciseAggregate\\Events\\ExerciseUpdatedEvent.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Domain\\Entities\\ExerciseAggregate\\Events\\ExerciseUpdatedEvent.cs",
+              "RelativeToolTip": "src\\Forma.Domain\\Entities\\ExerciseAggregate\\Events\\ExerciseUpdatedEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAtwAcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T18:54:42.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ExerciseDeletedEvent.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Domain\\Entities\\ExerciseAggregate\\Events\\ExerciseDeletedEvent.cs",
+              "RelativeDocumentMoniker": "src\\Forma.Domain\\Entities\\ExerciseAggregate\\Events\\ExerciseDeletedEvent.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Domain\\Entities\\ExerciseAggregate\\Events\\ExerciseDeletedEvent.cs",
+              "RelativeToolTip": "src\\Forma.Domain\\Entities\\ExerciseAggregate\\Events\\ExerciseDeletedEvent.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAApwAoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T18:54:23.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ExerciseCreatedEvent.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Domain\\Entities\\ExerciseAggregate\\Events\\ExerciseCreatedEvent.cs",
+              "RelativeDocumentMoniker": "src\\Forma.Domain\\Entities\\ExerciseAggregate\\Events\\ExerciseCreatedEvent.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Domain\\Entities\\ExerciseAggregate\\Events\\ExerciseCreatedEvent.cs",
+              "RelativeToolTip": "src\\Forma.Domain\\Entities\\ExerciseAggregate\\Events\\ExerciseCreatedEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T18:07:43.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "BaseEvent.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.CoreContext\\SharedKernel\\BaseEvent.cs",
+              "RelativeDocumentMoniker": "src\\Forma.CoreContext\\SharedKernel\\BaseEvent.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.CoreContext\\SharedKernel\\BaseEvent.cs",
+              "RelativeToolTip": "src\\Forma.CoreContext\\SharedKernel\\BaseEvent.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T18:08:23.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "EventStore.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.CoreContext\\SharedKernel\\EventStore.cs",
+              "RelativeDocumentMoniker": "src\\Forma.CoreContext\\SharedKernel\\EventStore.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.CoreContext\\SharedKernel\\EventStore.cs",
+              "RelativeToolTip": "src\\Forma.CoreContext\\SharedKernel\\EventStore.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T17:54:20.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "docker-compose.dcproj",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\docker-compose.dcproj",
+              "RelativeDocumentMoniker": "docker-compose.dcproj",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\docker-compose.dcproj",
+              "RelativeToolTip": "docker-compose.dcproj",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-21T17:26:10.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Dockerfile",
+              "RelativeDocumentMoniker": "src\\Forma.PublicApi\\Dockerfile",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Dockerfile",
+              "RelativeToolTip": "src\\Forma.PublicApi\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-21T17:25:53.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "20251223125847_muscleGroupsMigration.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Migrations\\20251223125847_muscleGroupsMigration.cs",
+              "RelativeDocumentMoniker": "src\\Forma.PublicApi\\Migrations\\20251223125847_muscleGroupsMigration.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Migrations\\20251223125847_muscleGroupsMigration.cs",
+              "RelativeToolTip": "src\\Forma.PublicApi\\Migrations\\20251223125847_muscleGroupsMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T20:15:34.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\Forma.PublicApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\appsettings.json",
+              "RelativeToolTip": "src\\Forma.PublicApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-19T21:25:54.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "appsettings.IntegrationTesting.json",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\appsettings.IntegrationTesting.json",
+              "RelativeDocumentMoniker": "src\\Forma.PublicApi\\appsettings.IntegrationTesting.json",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\appsettings.IntegrationTesting.json",
+              "RelativeToolTip": "src\\Forma.PublicApi\\appsettings.IntegrationTesting.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-19T21:25:39.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "EventToQueryModelProfile.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Query\\Profiles\\EventToQueryModelProfile.cs",
+              "RelativeDocumentMoniker": "src\\Forma.Query\\Profiles\\EventToQueryModelProfile.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Query\\Profiles\\EventToQueryModelProfile.cs",
+              "RelativeToolTip": "src\\Forma.Query\\Profiles\\EventToQueryModelProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T21:20:27.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "ExerciseEventHandler.cs",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Query\\EventHandlers\\ExerciseEventHandler.cs",
+              "RelativeDocumentMoniker": "src\\Forma.Query\\EventHandlers\\ExerciseEventHandler.cs",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Query\\EventHandlers\\ExerciseEventHandler.cs",
+              "RelativeToolTip": "src\\Forma.Query\\EventHandlers\\ExerciseEventHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T21:20:24.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Forma.IntegrationTests.csproj",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\tests\\Forma.IntegrationTests\\Forma.IntegrationTests.csproj",
+              "RelativeDocumentMoniker": "tests\\Forma.IntegrationTests\\Forma.IntegrationTests.csproj",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\tests\\Forma.IntegrationTests\\Forma.IntegrationTests.csproj",
+              "RelativeToolTip": "tests\\Forma.IntegrationTests\\Forma.IntegrationTests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-19T21:17:36.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Directory.Packages.props",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\Directory.Packages.props",
+              "RelativeDocumentMoniker": "Directory.Packages.props",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\Directory.Packages.props",
+              "RelativeToolTip": "Directory.Packages.props",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwBAAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-03-19T20:58:45.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Forma.PublicApi.csproj",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Forma.PublicApi.csproj",
+              "RelativeDocumentMoniker": "src\\Forma.PublicApi\\Forma.PublicApi.csproj",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.PublicApi\\Forma.PublicApi.csproj",
+              "RelativeToolTip": "src\\Forma.PublicApi\\Forma.PublicApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-19T20:48:35.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "requests.http",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\requests.http",
+              "RelativeDocumentMoniker": "requests.http",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\requests.http",
+              "RelativeToolTip": "requests.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-03-19T21:13:49.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Forma.Query.csproj",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Query\\Forma.Query.csproj",
+              "RelativeDocumentMoniker": "src\\Forma.Query\\Forma.Query.csproj",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Query\\Forma.Query.csproj",
+              "RelativeToolTip": "src\\Forma.Query\\Forma.Query.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-19T20:51:35.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Forma.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Infrastructure\\Forma.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "src\\Forma.Infrastructure\\Forma.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Infrastructure\\Forma.Infrastructure.csproj",
+              "RelativeToolTip": "src\\Forma.Infrastructure\\Forma.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-19T20:48:19.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Forma.CoreInfrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.CoreInfrastructure\\Forma.CoreInfrastructure.csproj",
+              "RelativeDocumentMoniker": "src\\Forma.CoreInfrastructure\\Forma.CoreInfrastructure.csproj",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.CoreInfrastructure\\Forma.CoreInfrastructure.csproj",
+              "RelativeToolTip": "src\\Forma.CoreInfrastructure\\Forma.CoreInfrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-19T20:48:23.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Forma.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Application\\Forma.Application.csproj",
+              "RelativeDocumentMoniker": "src\\Forma.Application\\Forma.Application.csproj",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\src\\Forma.Application\\Forma.Application.csproj",
+              "RelativeToolTip": "src\\Forma.Application\\Forma.Application.csproj",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-19T20:45:43.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "Forma.ArchitectureTests.csproj",
+              "DocumentMoniker": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\tests\\Forma.ArchitectureTests\\Forma.ArchitectureTests.csproj",
+              "RelativeDocumentMoniker": "tests\\Forma.ArchitectureTests\\Forma.ArchitectureTests.csproj",
+              "ToolTip": "C:\\Users\\gianl\\Desktop\\Gianluca\\Git_Sources\\Forma2\\Forma.App - Copy\\tests\\Forma.ArchitectureTests\\Forma.ArchitectureTests.csproj",
+              "RelativeToolTip": "tests\\Forma.ArchitectureTests\\Forma.ArchitectureTests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-19T20:45:44.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "nativeDebugging": true,
+      "dotnetRunMessages": true,
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "shop-webapi": "StartDebugging"
+      }
+    }
+  }
+}
