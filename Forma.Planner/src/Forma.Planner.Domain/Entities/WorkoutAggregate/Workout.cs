@@ -48,6 +48,18 @@ public class Workout : BaseEntity<WorkoutId>, IAggregateRoot
         if (!await contracts.uniquenessChecker.IsUniqueAsync(name, ownerId))
             throw new DomainArgumentException("A workout with the same name already exists.");
 
+        // ADR-006 Rule 1: cross-service check against exercise-service, fail-open — the adapter
+        // behind this contract only returns false on a confirmed "not found", never on a
+        // timeout/unreachable dependency, so a degraded exercise-service never blocks this save.
+        if (contracts.existenceChecker == null)
+            throw new DomainBadCodeException($"Required contract {nameof(contracts.existenceChecker)}");
+
+        foreach (var exerciseId in exercises.Select(e => e.ExerciseId).Distinct())
+        {
+            if (!await contracts.existenceChecker.ExistsAsync(exerciseId))
+                throw new DomainArgumentException($"No exercise found by Id: {exerciseId}");
+        }
+
         var workout = new Workout(WorkoutId.New(), ownerId, name);
         var version = WorkoutVersion.Create(workout.Id, versionNumber: 1, exercises);
 

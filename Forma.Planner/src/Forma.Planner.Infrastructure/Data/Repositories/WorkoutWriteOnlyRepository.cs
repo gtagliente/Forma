@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Forma.CoreInfrastructure.Abstractions;
 using Forma.Domain.Entities.RoutineAggregate.Contracts;
@@ -14,7 +15,8 @@ internal class WorkoutWriteOnlyRepository(WriteDbContext dbContext)
     : BaseWriteOnlyRepository<Workout, WorkoutId>(dbContext),
       IWorkoutWriteOnlyRepository<Workout, WorkoutId>,
       IWorkoutUniquenessChecker,
-      IWorkoutReferenceChecker
+      IWorkoutReferenceChecker,
+      IWorkoutExerciseUsageChecker
 {
     public async Task<bool> IsUniqueAsync(string name, Guid ownerId)
     {
@@ -26,5 +28,15 @@ internal class WorkoutWriteOnlyRepository(WriteDbContext dbContext)
     {
         return await DbContext.Set<Workout>()
             .AnyAsync(w => w.Id == workoutId && w.OwnerId == ownerId);
+    }
+
+    // ADR-006 Rule 2: queries the write model directly (not the eventually-consistent Mongo
+    // read side) — this check must never produce a false "not referenced" from projection lag.
+    public async Task<bool> IsExerciseReferencedInCurrentVersionAsync(Guid exerciseId)
+    {
+        return await DbContext.Set<Workout>()
+            .AnyAsync(w => w.Versions.Any(v =>
+                v.VersionNumber == w.CurrentVersionNumber &&
+                v.Entries.Any(e => e.ExerciseId == exerciseId)));
     }
 }

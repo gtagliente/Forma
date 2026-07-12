@@ -45,12 +45,14 @@
     <PackageVersion Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.*" />
     <PackageVersion Include="Microsoft.Extensions.Hosting" Version="9.*" />
     <PackageVersion Include="Microsoft.Extensions.Http" Version="9.*" />
+    <PackageVersion Include="Microsoft.Extensions.Http.Resilience" Version="10.7.0" />
     <PackageVersion Include="Microsoft.Extensions.Identity.Core" Version="9.*" />
     <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="9.*" />
     <PackageVersion Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="9.*" />
     <PackageVersion Include="Microsoft.Extensions.Options.DataAnnotations" Version="9.*" />
     <PackageVersion Include="Microsoft.Extensions.Options" Version="9.*" />
     <PackageVersion Include="Microsoft.Extensions.Primitives" Version="9.*" />
+    <PackageVersion Include="Microsoft.Kiota.Bundle" Version="2.0.0" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.*" />
     <PackageVersion Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.*" />
     <PackageVersion Include="MiniProfiler.AspNetCore.Mvc" Version="4.5.*" />

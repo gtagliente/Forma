@@ -68,6 +68,7 @@ builder.Services.AddControllers()
 builder.Services
     .ConfigureAppSettings()
     .AddInfrastructure()
+    .AddExternalServiceClients(builder.Configuration)
     .AddEntitiesBuilders()
     .AddCommandHandlers()
     .AddQueryHandlers()

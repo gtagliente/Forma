@@ -10,7 +10,7 @@
       },
       "dotnetRunMessages": true,
       "hotReloadEnabled": true,
-      "applicationUrl": "http://localhost:5072"
+      "applicationUrl": "http://localhost:5073"
     },
     "https": {
       "commandName": "Project",
@@ -21,7 +21,7 @@
       },
       "dotnetRunMessages": true,
       "hotReloadEnabled": true,
-      "applicationUrl": "https://localhost:7225;"
+      "applicationUrl": "https://localhost:7226;"
     },
     "IIS Express": {
       "commandName": "IISExpress",

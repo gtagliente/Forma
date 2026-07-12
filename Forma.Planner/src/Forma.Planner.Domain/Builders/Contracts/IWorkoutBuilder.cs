@@ -9,5 +9,7 @@ public interface IWorkoutBuilder
     struct Contracts
     {
         public readonly IWorkoutUniquenessChecker uniquenessChecker { get; init; }
+
+        public readonly IExerciseExistenceChecker existenceChecker { get; init; }
     }
 }

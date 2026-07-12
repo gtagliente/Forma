@@ -42,3 +42,8 @@ Renamed from the shared `Forma.Resource` template naming to `Forma.Planner` (sol
 ## Architecture
 
 Structurally identical to `exercise-service`'s (same originating template: `Forma.CoreContext`, `Forma.CoreInfrastructure`, `Forma.Domain`, `Forma.Application`, `Forma.Infrastructure`, `Forma.Query`, `Forma.PublicApi` — CQRS with EF Core write side + Mongo-shaped read side kept in sync via MediatR domain-event notifications). See `Forma.Exercise/docs/architecture/codebase-baseline.md` for the pattern description — it applies here too, just with the concrete `Exercise`/`ExerciseResource` types replaced by nothing yet (this is where `Workout`/`Routine` will go).
+
+
+## Engineering
+
+Here you can find the contract exposed via rest api openapi.json

@@ -7,11 +7,12 @@ internal class WorkoutBuilder : IWorkoutBuilder
 {
     public IWorkoutBuilder.Contracts _contracts { get; init; }
 
-    public WorkoutBuilder(IWorkoutUniquenessChecker uniquenessChecker)
+    public WorkoutBuilder(IWorkoutUniquenessChecker uniquenessChecker, IExerciseExistenceChecker existenceChecker)
     {
         _contracts = new()
         {
-            uniquenessChecker = uniquenessChecker
+            uniquenessChecker = uniquenessChecker,
+            existenceChecker = existenceChecker
         };
     }
 }
