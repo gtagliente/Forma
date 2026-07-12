@@ -1,0 +1,52 @@
+﻿--1) Eliminata dipendence da EF Core in Forma.Core
+
+--2) Strongly Typed Id
+
+--3) Spostati i factory methods nell'entit�
+(incapsulamento, open/closed Principle)
+
+--4) Creare DTO per mappare le entit� di dominio verso le entit� di persistenza
+
+--5) per chiarezza semantica, � preferibile nominare e separare i contratti in base all'intento, non in base al meccanismo (No contratti repositories nel domain)
+
+--6) Split di Forma.Core in Forma.CoreContext e Forma.CoreInfrastructre (Core di dominio e core tecnico)
+
+--7) Eliminazione di dipendenza da Mediator sul BaseEvent di Forma.CoreContext (Annullato)
+(Adapter patter, bridge pattern, interface segregation principle)
+
+--8) Notification e Dispatcher: inseriti contratti su Forma.CoreContext e Forma.CoreInfrastructre per principio Interface segregation.
+Implementazione Notification e Dispatcher su Forma.Infrastructure 
+(MediatorDomainEventNotification (Adapter (Wrapper)) , MediatorDomainEventDispatcher(Bridge, mediator, Strategy)) (Annullato)
+
+If later you use change events or outbox pattern,
+repositories can publish BaseEvents captured in your aggregates after SaveChangesAsync().
+That�s when your Unit of Work becomes the event dispatcher boundary.
+
+
+
+
+-- Next question
+So, is it correct to have in the Forma.Core the interfaces for IWriteOnlyRepository and IEventStoreRepository?
+
+
+
+dbEaver
+cbadmin Cbadmin11
+
+12/10/2025
+ - Docker-compose: 
+    - .env file allo stesso livello del docker-compose.yml viene usato per definire variabili d'ambiente.
+    - per osservare il risultato delle sostiuzioni delle variabili d'ambiente si può usare il comando `docker-compose config`.
+
+- EFCore Migrations:
+dotnet ef --startup-project ./src/Forma.PublicApi/Forma.PublicApi.csproj migrations add InitialMigration --context WriteDbContext --output-dir Migrations --project ./src/Forma.PublicApi/Forma.PublicApi.csproj
+
+dotnet ef --startup-project ./src/Forma.PublicApi/Forma.PublicApi.csproj migrations add InitialMigration --context EventStoreDbContext --output-dir Migrations/EventStore --project ./src/Forma.PublicApi/Forma.PublicApi.csproj
+
+dotnet ef --startup-project ./src/Forma.PublicApi/Forma.PublicApi.csproj database update RowVersionMigration --context WriteDbContext --output-dir Migrations --project ./src/Forma.PublicApi/Forma.PublicApi.csproj
+
+-- Remove Migration (quando la migrazione non è stata ancora applicata ai databases)
+dotnet ef --startup-project ./src/Forma.PublicApi/Forma.PublicApi.csproj migrations remove --context EventStoreDbContext  --project ./src/Forma.PublicApi/Forma.PublicApi.csproj
+https://matthiasnoback.nl/2022/04/ddd-entities-and-orm-entities/
+
+dotnet ef --startup-project ./src/Forma.PublicApi/Forma.PublicApi.csproj migrations add ExerciseResourceMigration --context WriteDbContext --output-dir ./src/Forma.PublicApi/Migrations --project ./src/Forma.PublicApi/Forma.PublicApi.csproj
