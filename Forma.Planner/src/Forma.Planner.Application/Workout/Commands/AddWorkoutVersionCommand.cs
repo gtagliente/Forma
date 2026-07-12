@@ -14,7 +14,7 @@ public class AddWorkoutVersionCommand : IRequest<Result>
 
     /// <summary>
     /// Caller-supplied — no auth exists yet. Must match the Workout's owner or the request is
-    /// rejected (403), see FT-002-workout-new-version/design.md.
+    /// rejected (403), see docs/features/FT-002-workout-new-version.md (Design section).
     /// </summary>
     [Required]
     public Guid OwnerId { get; set; }

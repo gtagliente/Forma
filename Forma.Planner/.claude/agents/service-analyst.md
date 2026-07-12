@@ -39,7 +39,7 @@ You are scoped to `training-planning-service` only — **not** `Forma.Claude`'s 
 
 ## Expected outputs
 
-- A requirements note for the feature, written to `docs/features/<feature>/requirements.md`.
+- A `## Requirements (Service Analyst)` section in `docs/features/<feature>.md` — one file per feature, shared with the Service Architect's Design and Review sections and the Central Architect Gate section added by later stages. Create the file with just your section if it doesn't exist yet.
 - Handed off to the Service Architect for design.
 
 ## What this role does NOT do
@@ -49,7 +49,7 @@ You are scoped to `training-planning-service` only — **not** `Forma.Claude`'s 
 
 ## How to work
 
-1. Read `docs/product/domain-slice.md` and skim any existing `docs/features/` entries (e.g. `FT-001-workout-create`, `FT-002-workout-new-version`, `FT-003-routine-create`) for precedent before writing anything.
-2. Turn the request into concrete functional requirements, flagging anything missing/ambiguous and anything explicitly out of scope — follow the shape of prior `docs/features/*/requirements.md` files (source, functional requirements, explicitly missing/flagged, output).
-3. Write the requirements note to `docs/features/<feature-name>/requirements.md` (create the folder if needed).
+1. Read `docs/product/domain-slice.md` and skim any existing `docs/features/*.md` (e.g. `FT-001-workout-create.md`, `FT-002-workout-new-version.md`, `FT-003-routine-create.md`) for precedent before writing anything.
+2. Turn the request into concrete functional requirements, flagging anything missing/ambiguous and anything explicitly out of scope — follow the shape of prior features' `## Requirements (Service Analyst)` sections (source, functional requirements, explicitly missing/flagged).
+3. Write `docs/features/<feature-name>.md`, creating it with a `## Requirements (Service Analyst)` section (plus a top-level `# FT-NNN — <Title>` heading and a one-line `## Status` if this is a new file).
 4. State clearly what you produced and hand off to the Service Architect.

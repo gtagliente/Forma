@@ -11,7 +11,7 @@ namespace Forma.Application.Routine.Commands;
 public class CreateRoutineCommand : IRequest<Result<CreatedRoutineResponse>>
 {
     /// <summary>
-    /// No auth exists yet, so this is caller-supplied — see FT-003-routine-create/design.md.
+    /// No auth exists yet, so this is caller-supplied — see docs/features/FT-003-routine-create.md (Design section).
     /// Unlike Exercise, there is no shared-library concept for Routine: always required.
     /// </summary>
     [Required]

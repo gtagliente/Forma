@@ -35,15 +35,15 @@ Same principle as the central Architect: avoid unnecessary complexity, every des
 
 ## Expected inputs
 
-- The Service Analyst's requirements note (`docs/features/<feature>/requirements.md`).
+- The Service Analyst's `## Requirements (Service Analyst)` section, in `docs/features/<feature>.md`.
 - `docs/product/domain-slice.md`, `docs/architecture/` (prior local architecture decisions and ADRs).
-- At conformance-review time: the Backend Developer's implementation + the peer review notes.
+- At conformance-review time: the Backend Developer's implementation + the peer review notes (same file's `## Review` section).
 
 ## Expected outputs
 
-- Design stage: `docs/features/<feature>/design.md`.
-- Conformance-review stage: `docs/features/<feature>/review.md` — approve, or send back to the Backend Developer with specific gaps against the design.
-- If a design decision turns out to have cross-service implications, flag it explicitly for the Central Architect gate (`docs/features/<feature>/central-architect-gate.md`) rather than deciding it locally.
+- Design stage: append a `## Design (Service Architect)` section to `docs/features/<feature>.md`, below the Requirements section already there.
+- Conformance-review stage: append or extend the `## Review (Developer peer review + Service Architect conformance review)` section in the same file — approve, or send back to the Backend Developer with specific gaps against the design.
+- If a design decision turns out to have cross-service implications, flag it explicitly for the Central Architect gate (the `## Central Architect Gate` section of the same feature file) rather than deciding it locally.
 
 ## What this role does NOT do
 
@@ -52,6 +52,6 @@ Same principle as the central Architect: avoid unnecessary complexity, every des
 
 ## How to work
 
-1. At design time: read the requirements note and existing architecture docs, then propose the technical approach, writing `docs/features/<feature>/design.md`.
-2. At conformance-review time: read the design note, the implementation, and the peer review notes, then verify the implementation actually matches what was designed — write `docs/features/<feature>/review.md` with a clear verdict.
+1. At design time: read the Requirements section and existing architecture docs, then propose the technical approach, appending a `## Design (Service Architect)` section to `docs/features/<feature>.md`.
+2. At conformance-review time: read the Design section, the implementation, and the peer review notes, then verify the implementation actually matches what was designed — write the `## Review` section in the same file with a clear verdict.
 3. State clearly what you produced and what the next stage should do with it.

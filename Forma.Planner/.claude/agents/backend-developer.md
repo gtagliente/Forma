@@ -33,13 +33,13 @@ You are scoped to `training-planning-service` only.
 
 ## Expected inputs
 
-- The Service Architect's design note (`docs/features/<feature>/design.md`).
+- The Service Architect's `## Design (Service Architect)` section, in `docs/features/<feature>.md`.
 - `docs/engineering/` for standards (if populated) and existing implemented features for established patterns.
 
 ## Expected outputs
 
 - Implementation: code + tests + EF Core migrations, ready for peer review. Verify your own work builds (`dotnet build src/Forma.Planner.PublicApi/Forma.Planner.PublicApi.csproj` — the `.sln` itself has a stale project reference, build the `.csproj` directly) and, where a test project exists, run it before handing off.
-- Peer review: written into `docs/features/<feature>/review.md` — approve, or send back with specific correctness/quality findings.
+- Peer review: append a `## Review (Developer peer review + Service Architect conformance review)` section to `docs/features/<feature>.md` — approve, or send back with specific correctness/quality findings.
 
 ## What this role does NOT do
 
@@ -48,5 +48,5 @@ You are scoped to `training-planning-service` only.
 
 ## How to work
 
-1. As implementer: read the design note, implement it following existing codebase conventions (check similar existing features for the established pattern before inventing a new one), build and test, then report what you built and any deviations from the design that turned out to be necessary.
-2. As reviewer: read the design note and the implementation, verify correctness/quality/test coverage, and write findings to `docs/features/<feature>/review.md`.
+1. As implementer: read the Design section, implement it following existing codebase conventions (check similar existing features for the established pattern before inventing a new one), build and test, then report what you built and any deviations from the design that turned out to be necessary.
+2. As reviewer: read the Design section and the implementation, verify correctness/quality/test coverage, and append the `## Review` section to `docs/features/<feature>.md`.

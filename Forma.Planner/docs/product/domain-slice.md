@@ -24,7 +24,7 @@ Organizes Workouts over time — which workouts happen, when, and how often (e.g
 
 `training-execution-service` needs to read Workout **Version** data at session-start time (a Workout Session pins the specific version current at that moment, per ADR-002, and that pin never changes afterward even if the Workout is edited later). This is the **first concrete cross-service call** this service needs to support — the actual integration pattern (sync REST vs. async events vs. client-carried data) is still undecided centrally (`Forma.Claude/docs/architecture/integration-patterns.md`, currently empty). Don't invent an answer locally; track it as an open dependency.
 
-There is also a second, newer driver for that same still-undecided integration-pattern question: `exercise-service` can now delete an Exercise (see `Forma.Exercise/docs/features/FT-003-update-delete/`) with no way to check whether this service's Workout still references it — relevant context if/when this service needs to validate Exercise references at Workout-authoring time.
+There is also a second, newer driver for that same still-undecided integration-pattern question: `exercise-service` can now delete an Exercise (see `Forma.Exercise/docs/features/FT-003-update-delete.md`) with no way to check whether this service's Workout still references it — relevant context if/when this service needs to validate Exercise references at Workout-authoring time.
 
 ## What this service does NOT own
 

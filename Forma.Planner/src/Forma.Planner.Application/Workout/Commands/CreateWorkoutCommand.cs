@@ -10,7 +10,7 @@ namespace Forma.Application.Workout.Commands;
 public class CreateWorkoutCommand : IRequest<Result<CreatedWorkoutResponse>>
 {
     /// <summary>
-    /// No auth exists yet, so this is caller-supplied — see FT-001-workout-create/design.md.
+    /// No auth exists yet, so this is caller-supplied — see docs/features/FT-001-workout-create.md (Design section).
     /// Unlike Exercise, there is no shared-library concept for Workout: always required.
     /// </summary>
     [Required]
