@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import type { Exercise, ExerciseSet } from '../../types';
+import type { WorkoutExercise, ExerciseSet } from '../../types';
 import { ChevronDown, Plus, Minus, Settings2 } from 'lucide-react';
 
-export const ExerciseItem = ({ exercise: initialExercise }: { exercise: Exercise }) => {
+export const ExerciseItem = ({ exercise: initialExercise }: { exercise: WorkoutExercise }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [sets, setSets] = useState<ExerciseSet[]>(initialExercise.sets);
   const [showGenericRest, setShowGenericRest] = useState(false);

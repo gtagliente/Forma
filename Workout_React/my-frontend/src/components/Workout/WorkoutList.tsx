@@ -1,24 +1,26 @@
-// type Workout = {
-//   id: string | number;
-//   title: string;
-//   exercises: unknown[];
-// };
+import type { Workout } from '../../types';
+import { WorkoutCard } from './WorkoutCard';
 
-// export default function WorkoutList({ workouts }: { workouts: Workout[] }) {
-//   return (
-//     <div className="p-6">
-//       <h2 className="text-2xl font-bold mb-4">I tuoi Workout</h2>
-//       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-//         {workouts.map((workout) => (
-//           <div key={workout.id} className="bg-white p-4 rounded-lg shadow border border-gray-200">
-//             <h3 className="font-semibold text-lg">{workout.title}</h3>
-//             <p className="text-gray-600">{workout.exercises.length} esercizi</p>
-//             <button className="mt-4 text-blue-500 hover:underline">Vedi dettagli</button>
-//           </div>
-
-          
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
+// Resurrected per FT-003 design: was entirely commented out, dead code, not
+// imported or rendered anywhere. Presentational grid for WorkoutsPage - owns
+// no state, no fetching; workouts/exerciseNames/onEdit are all passed down
+// from the container, close to the original commented shape but rendering
+// the real WorkoutCard (not the old inline card markup) for visual
+// consistency with the existing Routine-nested rendering in RoutineDetail.
+export default function WorkoutList({
+  workouts,
+  exerciseNames,
+  onEdit,
+}: {
+  workouts: Workout[];
+  exerciseNames: Record<string, string>;
+  onEdit?: (workout: Workout) => void;
+}) {
+  return (
+    <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+      {workouts.map((workout) => (
+        <WorkoutCard key={workout.id} workout={workout} exerciseNames={exerciseNames} onEdit={onEdit} />
+      ))}
+    </div>
+  );
+}
