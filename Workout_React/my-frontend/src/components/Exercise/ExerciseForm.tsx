@@ -29,33 +29,33 @@ export default function ExerciseForm({ onSave, initialValue }: ExerciseFormProps
 
   return (
     <form
-      className="bg-gray-50 p-6 rounded-lg border"
+      className="bg-gray-900 p-6 rounded-lg border border-gray-700"
       onSubmit={(e) => {
         e.preventDefault();
         onSave({ name, description, muscleGroups });
       }}
     >
-      <label className="block mb-2 font-medium">Nome Esercizio</label>
+      <label className="block mb-2 font-medium text-gray-300">Nome Esercizio</label>
       <input
         type="text"
-        className="w-full p-2 border rounded mb-4"
+        className="w-full p-2 border border-gray-600 rounded mb-4 bg-gray-800 text-white placeholder-gray-500 focus:outline-none focus:border-blue-400"
         value={name}
         onChange={(e) => setName(e.target.value)}
         placeholder="es. Panca Piana"
       />
 
-      <label className="block mb-2 font-medium">Descrizione</label>
+      <label className="block mb-2 font-medium text-gray-300">Descrizione</label>
       <textarea
-        className="w-full p-2 border rounded mb-4"
+        className="w-full p-2 border border-gray-600 rounded mb-4 bg-gray-800 text-white placeholder-gray-500 focus:outline-none focus:border-blue-400"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
         placeholder="es. Esercizio per il petto"
       />
 
-      <label className="block mb-2 font-medium">Gruppi Muscolari</label>
+      <label className="block mb-2 font-medium text-gray-300">Gruppi Muscolari</label>
       <div className="flex flex-wrap gap-3 mb-4">
         {MUSCLE_GROUPS.map((group) => (
-          <label key={group} className="flex items-center gap-1 text-sm">
+          <label key={group} className="flex items-center gap-1 text-sm text-gray-300">
             <input
               type="checkbox"
               checked={muscleGroups.includes(group)}
