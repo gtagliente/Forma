@@ -10,7 +10,6 @@ Knowledge base for `training-planning-service` — scoped to this one service on
 - `architecture/` — this service's internal architecture and locally-scoped ADRs.
 - `engineering/` — coding standards, git workflow, testing strategy, devops for this service's codebase.
 - `features/` — feature-level work tracked within this service.
-- `branches/` — branch-scoped, temporary context for this repo's own git branches.
 
 ## What does NOT belong here
 

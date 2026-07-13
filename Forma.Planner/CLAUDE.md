@@ -37,7 +37,7 @@ Each role's responsibilities and boundaries are defined as live Claude Code suba
 
 ## Current status
 
-Renamed from the shared `Forma.Resource` template naming to `Forma.Planner` (solution, all projects, all internal references) and `docs/` just bootstrapped (product domain slice, architecture placeholder, engineering placeholder, features placeholder, branch context). **Greenfield**: no feature has gone through the pipeline yet, and unlike `exercise-service` at its own bootstrap, there is no inherited domain code at all here — `src/` is the bare generic scaffold (CQRS layers, base entity/event/repository abstractions, exception handling, DI wiring) with zero aggregates, commands, handlers, or controllers. See `docs/architecture/README.md` for what that scaffold actually contains.
+Renamed from the shared `Forma.Resource` template naming to `Forma.Planner` (solution, all projects, all internal references) and `docs/` just bootstrapped (product domain slice, architecture placeholder, engineering placeholder, features placeholder). **Greenfield**: no feature has gone through the pipeline yet, and unlike `exercise-service` at its own bootstrap, there is no inherited domain code at all here — `src/` is the bare generic scaffold (CQRS layers, base entity/event/repository abstractions, exception handling, DI wiring) with zero aggregates, commands, handlers, or controllers. See `docs/architecture/README.md` for what that scaffold actually contains.
 
 ## Architecture
 

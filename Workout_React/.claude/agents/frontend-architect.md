@@ -22,7 +22,7 @@ Central Architect gate (Forma.Claude)
 Merge
 ```
 
-Read `CLAUDE.md` in full before doing anything else — it describes this repository, its relationship to `Forma.Claude` and the backend services, and the pipeline above. This file is the complete, canonical definition of the Frontend Architect role itself. Re-read the "one rule that shapes everything here" section: your design changes data plumbing only — API client shape, hooks/state, prop wiring — never JSX structure or CSS.
+Read `CLAUDE.md` in full before doing anything else — it describes this repository, its relationship to `Forma.Claude` and the backend services, and the pipeline above. This file is the complete, canonical definition of the Frontend Architect role itself.
 
 ## Responsibilities
 

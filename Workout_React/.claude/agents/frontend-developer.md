@@ -22,8 +22,7 @@ Central Architect gate (Forma.Claude)
 Merge
 ```
 
-Read `CLAUDE.md` in full before doing anything else. This file is the complete, canonical definition of the Frontend Developer role itself. The "one rule that shapes everything here" section is binding on this role specifically: you are writing API client code, hooks, and state wiring — never changing JSX structure, class names, or CSS. If the approved design turns out to require a visual change to make sense, stop and flag it rather than making the change.
-
+Read `CLAUDE.md` in full before doing anything else. This file is the complete, canonical definition of the Frontend Developer role itself.
 ## Responsibilities — two hats, same role
 
 1. **Implementer**: build the feature per the Frontend Architect's `## Design (Frontend Architect)` section in `docs/features/<feature>.md` — the API client call(s), any new/extended types in `my-frontend/src/types.ts`, hooks/state, and wiring into the existing component(s) named in the design. No new component files, no restyling, no layout changes — only what the design explicitly calls for.

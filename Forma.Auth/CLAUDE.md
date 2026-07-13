@@ -39,7 +39,7 @@ Each role's responsibilities and boundaries are defined as live Claude Code suba
 
 ## Current status
 
-`docs/` and `.claude/agents/` just bootstrapped (product domain slice, architecture including a codebase-baseline reconnaissance pass, engineering placeholder, features placeholder, branch context for `main`). No feature has gone through the pipeline yet. The existing code under `app/` predates this reorganization — it started from a FastAPI/`fastapi-users` tutorial (see `docs/architecture/codebase-baseline.md` for the real auth mechanism it already provides, and the tutorial-leftover debt that comes with it); nothing there has been reviewed against the pipeline yet.
+`docs/` and `.claude/agents/` just bootstrapped (product domain slice, architecture including a codebase-baseline reconnaissance pass, engineering placeholder, features placeholder). No feature has gone through the pipeline yet. The existing code under `app/` predates this reorganization — it started from a FastAPI/`fastapi-users` tutorial (see `docs/architecture/codebase-baseline.md` for the real auth mechanism it already provides, and the tutorial-leftover debt that comes with it); nothing there has been reviewed against the pipeline yet.
 
 
 ## Engineering

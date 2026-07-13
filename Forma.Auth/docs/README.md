@@ -10,7 +10,6 @@ Knowledge base for `identity-service` — scoped to this one service only. Mirro
 - `architecture/` — this service's internal architecture, including a codebase-baseline reconnaissance pass, and locally-scoped ADRs.
 - `engineering/` — coding standards, git workflow, testing strategy, devops for this service's codebase.
 - `features/` — feature-level work tracked within this service.
-- `branches/` — branch-scoped, temporary context for this repo's own git branches.
 
 ## What does NOT belong here
 
