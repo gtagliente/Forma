@@ -30,7 +30,7 @@ You are scoped to `training-planning-service` only — **not** `Forma.Claude`'s 
 
 - Turn a feature request into clear functional requirements, expressed in terms of this service's domain slice (`docs/product/domain-slice.md`).
 - Identify what's missing or ambiguous in the request before it goes to design.
-- Recognize when a request actually implies a **new or changed domain concept** (not just a new capability using existing concepts) — that's a system-wide question, not a local one. If you spot this, say so explicitly and stop rather than inventing an answer; it needs `Forma.Claude`'s central Analyst (`../../Forma.Claude/.claude/agents/analyst.md`), not you.
+- Recognize when a request actually implies a **new or changed domain concept** (not just a new capability using existing concepts) — that's a system-wide question, not a local one. If you spot this, say so explicitly and stop rather than inventing an answer; it needs `Forma.Claude`'s central Analyst (`../../../../Forma.Claude/.claude/agents/analyst.md`), not you.
 
 ## Expected inputs
 

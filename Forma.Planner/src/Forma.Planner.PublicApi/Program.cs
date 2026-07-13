@@ -94,6 +94,17 @@ builder.Services.AddMiniProfiler(miniProfilerOptions =>
     miniProfilerOptions.EnableDebugMode = builder.Environment.IsDevelopment();
 }).AddEntityFramework();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("ReactApp", policy =>
+    {
+        policy
+            .WithOrigins("http://localhost:5173")
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
 // Validating the services added in the ASP.NET Core DI.
 builder.Host.UseDefaultServiceProvider((context, serviceProviderOptions) =>
 {
@@ -144,6 +155,7 @@ app.UseResponseCompression();
 app.UseHttpsRedirection();
 app.UseMiniProfiler();
 app.UseCorrelationId();
+app.UseCors("ReactApp");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();

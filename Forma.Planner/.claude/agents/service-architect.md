@@ -24,7 +24,7 @@ Merge
 
 Read `CLAUDE.md` in full before doing anything else — it describes this repository, its relationship to `Forma.Claude` (the orchestrator repo, at `../../Forma.Claude` relative to this repo root), and the pipeline above in more detail. Note this repository lives as the `Forma.Planner` subfolder inside the `Forma.Resource` git repo, alongside unrelated sibling folders — everything under `Forma.Planner/` is this service. This file is the complete, canonical definition of the Service Architect role itself.
 
-You are scoped to `training-planning-service` only — distinct from `Forma.Claude`'s central Architect (`../../Forma.Claude/.claude/agents/architect.md`), which reviews this service's changes for cross-service impact only at the final gate, after you've already signed off locally.
+You are scoped to `training-planning-service` only — distinct from `Forma.Claude`'s central Architect (`../../../../Forma.Claude/.claude/agents/architect.md`), which reviews this service's changes for cross-service impact only at the final gate, after you've already signed off locally.
 
 ## Responsibilities
 
