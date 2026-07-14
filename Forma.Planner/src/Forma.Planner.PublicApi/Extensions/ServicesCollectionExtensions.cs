@@ -1,9 +1,11 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
+using Forma.CoreInfrastructure.Abstractions;
 using Forma.CoreInfrastructure.AppSettings;
 using Forma.CoreInfrastructure.Extensions;
 using Forma.Infrastructure;
 using Forma.Infrastructure.Data.Context;
+using Forma.PublicApi.Services;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
@@ -26,6 +28,9 @@ internal static class ServicesCollectionExtensions
 
     private static readonly string[] DbRelationalTags = ["database", "ef-core", "sql-server", "relational"];
     private static readonly string[] DbNoSqlTags = ["database", "mongodb", "no-sql"];
+
+    public static IServiceCollection AddCurrentUserAccessor(this IServiceCollection services) =>
+        services.AddScoped<ICurrentUserAccessor, CurrentUserAccessor>();
 
     public static IServiceCollection AddHealthChecks(this IServiceCollection services, IConfiguration configuration)
     {

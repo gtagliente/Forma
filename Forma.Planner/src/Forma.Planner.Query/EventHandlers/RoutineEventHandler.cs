@@ -1,10 +1,11 @@
 using System.Threading;
 using System.Threading.Tasks;
+using System;
 using AutoMapper;
 using Forma.CoreInfrastructure.Abstractions;
+using Forma.CoreInfrastructure.Caching;
 using Forma.Domain.Entities.RoutineAggregate.Events;
 using Forma.Query.Abstractions;
-using Forma.Query.Application.Routine.Queries;
 using Forma.Query.QueriesModel;
 using MediatR;
 using Microsoft.Extensions.Logging;
@@ -24,12 +25,12 @@ public class RoutineEventHandler(
 
         var routineQueryModel = mapper.Map<RoutineQueryModel>(notification);
         await synchronizeDb.UpsertAsync(routineQueryModel, filter => filter.Id == notification.AggregateId);
-        await ClearCacheAsync();
+        await ClearCacheAsync(notification.OwnerId);
     }
 
-    private async Task ClearCacheAsync()
+    private async Task ClearCacheAsync(Guid ownerId)
     {
-        var cacheKeys = new[] { nameof(GetAllRoutineQuery) };
+        var cacheKeys = new[] { RoutineCacheKeys.ForUser(ownerId) };
         await cacheService.RemoveAsync(cacheKeys);
     }
 

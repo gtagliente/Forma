@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 using Ardalis.Result;
 using Forma.Application.Routine.Responses;
 using Forma.Domain.Entities.WorkoutAggregate;
@@ -11,10 +12,12 @@ namespace Forma.Application.Routine.Commands;
 public class CreateRoutineCommand : IRequest<Result<CreatedRoutineResponse>>
 {
     /// <summary>
-    /// No auth exists yet, so this is caller-supplied — see docs/features/FT-003-routine-create.md (Design section).
-    /// Unlike Exercise, there is no shared-library concept for Routine: always required.
+    /// Server-derived from the authenticated caller (ADR-007) — not client-bindable. The
+    /// controller sets this from <c>ICurrentUserAccessor.UserId</c> after model binding, before
+    /// dispatching the command. Unlike Exercise, there is no shared-library concept for
+    /// Routine: always required.
     /// </summary>
-    [Required]
+    [JsonIgnore]
     public Guid OwnerId { get; set; }
 
     [Required]

@@ -1,10 +1,11 @@
 using System.Threading;
 using System.Threading.Tasks;
+using System;
 using AutoMapper;
 using Forma.CoreInfrastructure.Abstractions;
+using Forma.CoreInfrastructure.Caching;
 using Forma.Domain.Entities.WorkoutAggregate.Events;
 using Forma.Query.Abstractions;
-using Forma.Query.Application.Workout.Queries;
 using Forma.Query.QueriesModel;
 using MediatR;
 using Microsoft.Extensions.Logging;
@@ -25,7 +26,7 @@ public class WorkoutEventHandler(
 
         var workoutQueryModel = mapper.Map<WorkoutQueryModel>(notification);
         await synchronizeDb.UpsertAsync(workoutQueryModel, filter => filter.Id == notification.AggregateId);
-        await ClearCacheAsync();
+        await ClearCacheAsync(notification.OwnerId);
     }
 
     public async Task Handle(WorkoutVersionCreatedEvent notification, CancellationToken cancellationToken)
@@ -34,12 +35,12 @@ public class WorkoutEventHandler(
 
         var workoutQueryModel = mapper.Map<WorkoutQueryModel>(notification);
         await synchronizeDb.UpsertAsync(workoutQueryModel, filter => filter.Id == notification.AggregateId);
-        await ClearCacheAsync();
+        await ClearCacheAsync(notification.OwnerId);
     }
 
-    private async Task ClearCacheAsync()
+    private async Task ClearCacheAsync(Guid ownerId)
     {
-        var cacheKeys = new[] { nameof(GetAllWorkoutQuery) };
+        var cacheKeys = new[] { WorkoutCacheKeys.ForUser(ownerId) };
         await cacheService.RemoveAsync(cacheKeys);
     }
 

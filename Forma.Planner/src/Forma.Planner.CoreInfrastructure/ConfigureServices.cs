@@ -11,7 +11,8 @@ public static class ConfigureServices
     public static IServiceCollection ConfigureAppSettings(this IServiceCollection services) =>
         services
             .AddOptionsWithValidation<ConnectionOptions>()
-            .AddOptionsWithValidation<CacheOptions>();
+            .AddOptionsWithValidation<CacheOptions>()
+            .AddOptionsWithValidation<JwtOptions>();
 
     /// <summary>
     /// Adds options with validation to the service collection.

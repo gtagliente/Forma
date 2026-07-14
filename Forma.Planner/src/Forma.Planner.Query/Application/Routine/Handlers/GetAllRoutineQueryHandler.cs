@@ -3,6 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Ardalis.Result;
 using Forma.CoreInfrastructure.Abstractions;
+using Forma.CoreInfrastructure.Caching;
 using Forma.Query.Application.Routine.Queries;
 using Forma.Query.Data.Repositories.Abstractions;
 using Forma.Query.QueriesModel;
@@ -17,7 +18,7 @@ public class GetAllRoutineQueryHandler(IRoutineReadOnlyRepository repository, IC
         GetAllRoutineQuery request,
         CancellationToken cancellationToken)
     {
-        var cacheKey = $"{nameof(GetAllRoutineQuery)}:{request.RequestingUserId}";
+        var cacheKey = RoutineCacheKeys.ForUser(request.RequestingUserId);
 
         return Result<IEnumerable<RoutineQueryModel>>.Success(
             await cacheService.GetOrCreateAsync(cacheKey, () => repository.GetAllForOwnerAsync(request.RequestingUserId)));

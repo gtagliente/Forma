@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 using Ardalis.Result;
 using Forma.Domain.Entities.WorkoutAggregate;
 using MediatR;
@@ -13,10 +14,14 @@ public class AddWorkoutVersionCommand : IRequest<Result>
     public WorkoutId WorkoutId { get; set; }
 
     /// <summary>
-    /// Caller-supplied — no auth exists yet. Must match the Workout's owner or the request is
-    /// rejected (403), see docs/features/FT-002-workout-new-version.md (Design section).
+    /// Server-derived from the authenticated caller (ADR-007) — not client-bindable. The
+    /// controller sets this from <c>ICurrentUserAccessor.UserId</c> after model binding, before
+    /// dispatching the command. Must match the Workout's owner or the request is rejected
+    /// (403) — this is what makes <c>AddWorkoutVersionCommandHandler</c>'s existing ownership
+    /// check (previously cosmetic, since this value used to be caller-supplied) actually
+    /// secure.
     /// </summary>
-    [Required]
+    [JsonIgnore]
     public Guid OwnerId { get; set; }
 
     [Required]

@@ -5,10 +5,12 @@ using System.Net.Mime;
 using System.Threading.Tasks;
 using Asp.Versioning;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Forma.Application.Workout.Commands;
 using Forma.Application.Workout.Responses;
+using Forma.CoreInfrastructure.Abstractions;
 using Forma.PublicApi.Extensions;
 using Forma.PublicApi.Models;
 using Forma.Query.Application.Workout.Queries;
@@ -21,7 +23,7 @@ namespace Forma.PublicApi.Controllers.V1;
 [ApiVersion("1.0")]
 [Route("api/[controller]")]
 [TypeFilter<DomainExceptionToActionResultFilter>]
-public class WorkoutsController(IMediator mediator) : ControllerBase
+public class WorkoutsController(IMediator mediator, ICurrentUserAccessor currentUserAccessor) : ControllerBase
 {
     ////////////////////////
     // POST: /api/workouts/Create
@@ -32,34 +34,43 @@ public class WorkoutsController(IMediator mediator) : ControllerBase
     /// </summary>
     /// <response code="201">Returns the Id of the new workout.</response>
     /// <response code="400">Returns list of errors if the request is invalid.</response>
+    /// <response code="401">When the caller is not authenticated.</response>
     /// <response code="500">When an unexpected internal error occurs on the server.</response>
+    [Authorize]
     [HttpPost(nameof(Create))]
     [Consumes(MediaTypeNames.Application.Json)]
     [Produces(MediaTypeNames.Application.Json)]
     [ProducesResponseType(typeof(ApiResponse<CreatedWorkoutResponse>), StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
     [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status500InternalServerError)]
-    public async Task<IActionResult> Create([FromBody][Required] CreateWorkoutCommand command) =>
-        (await mediator.Send(command)).ToActionResult();
+    public async Task<IActionResult> Create([FromBody][Required] CreateWorkoutCommand command)
+    {
+        command.OwnerId = currentUserAccessor.UserId!.Value;
+        return (await mediator.Send(command)).ToActionResult();
+    }
 
     //////////////////////
     // GET: /api/workouts/GetAll
     //////////////////////
 
     /// <summary>
-    /// Gets all Workouts owned by the requesting user.
+    /// Gets all Workouts owned by the authenticated user.
     /// </summary>
     /// <response code="200">Returns the list of workouts.</response>
     /// <response code="400">Returns list of errors if the request is invalid.</response>
+    /// <response code="401">When the caller is not authenticated.</response>
     /// <response code="500">When an unexpected internal error occurs on the server.</response>
+    [Authorize]
     [HttpGet(nameof(GetAll))]
     [Consumes(MediaTypeNames.Application.Json)]
     [Produces(MediaTypeNames.Application.Json)]
     [ProducesResponseType(typeof(ApiResponse<IEnumerable<WorkoutQueryModel>>), StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
     [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status500InternalServerError)]
-    public async Task<IActionResult> GetAll([FromQuery][Required] Guid requestingUserId) =>
-        (await mediator.Send(new GetAllWorkoutQuery(requestingUserId))).ToActionResult();
+    public async Task<IActionResult> GetAll() =>
+        (await mediator.Send(new GetAllWorkoutQuery(currentUserAccessor.UserId!.Value))).ToActionResult();
 
     ////////////////////////////////////
     // POST: /api/workouts/AddNewVersion
@@ -71,17 +82,23 @@ public class WorkoutsController(IMediator mediator) : ControllerBase
     /// </summary>
     /// <response code="200">Returns the response with the success message.</response>
     /// <response code="400">Returns list of errors if the request is invalid.</response>
+    /// <response code="401">When the caller is not authenticated.</response>
     /// <response code="403">When the caller is not the Workout's owner.</response>
     /// <response code="404">When no workout is found by the given Id.</response>
     /// <response code="500">When an unexpected internal error occurs on the server.</response>
+    [Authorize]
     [HttpPost(nameof(AddNewVersion))]
     [Consumes(MediaTypeNames.Application.Json)]
     [Produces(MediaTypeNames.Application.Json)]
     [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
     [ProducesResponseType(StatusCodes.Status403Forbidden)]
     [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
     [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status500InternalServerError)]
-    public async Task<IActionResult> AddNewVersion([FromBody][Required] AddWorkoutVersionCommand command) =>
-        (await mediator.Send(command)).ToActionResult();
+    public async Task<IActionResult> AddNewVersion([FromBody][Required] AddWorkoutVersionCommand command)
+    {
+        command.OwnerId = currentUserAccessor.UserId!.Value;
+        return (await mediator.Send(command)).ToActionResult();
+    }
 }

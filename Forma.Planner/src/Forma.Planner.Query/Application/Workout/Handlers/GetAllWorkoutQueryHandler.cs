@@ -3,6 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Ardalis.Result;
 using Forma.CoreInfrastructure.Abstractions;
+using Forma.CoreInfrastructure.Caching;
 using Forma.Query.Application.Workout.Queries;
 using Forma.Query.Data.Repositories.Abstractions;
 using Forma.Query.QueriesModel;
@@ -17,7 +18,7 @@ public class GetAllWorkoutQueryHandler(IWorkoutReadOnlyRepository repository, IC
         GetAllWorkoutQuery request,
         CancellationToken cancellationToken)
     {
-        var cacheKey = $"{nameof(GetAllWorkoutQuery)}:{request.RequestingUserId}";
+        var cacheKey = WorkoutCacheKeys.ForUser(request.RequestingUserId);
 
         return Result<IEnumerable<WorkoutQueryModel>>.Success(
             await cacheService.GetOrCreateAsync(cacheKey, () => repository.GetAllForOwnerAsync(request.RequestingUserId)));
