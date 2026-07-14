@@ -24,6 +24,8 @@ export const WorkoutsPage = ({
   const [search, setSearch] = useState('');
   const [isFormOpen, setIsFormOpen] = useState(false);
   const [editingWorkout, setEditingWorkout] = useState<Workout | undefined>(undefined);
+  const [isLoading, setIsLoading] = useState(true);
+
 
   // Mirrors ExerciseLibrary.tsx's hydrate pattern: the initial-mount fetch
   // is its own function declared inside the effect, satisfying
@@ -31,10 +33,13 @@ export const WorkoutsPage = ({
   // here (not a parallel fetch function) purely as the exerciseId->name
   // lookup source and as the picker's option list for WorkoutForm.
   useEffect(() => {
+
     const load = async () => {
       try {
+        setIsLoading(true);
         const result = await listExercises();
         setExercises(result);
+        setIsLoading(false);
       } catch {
         // Exercise-name lookup/picker is a display nicety here - a failed
         // fetch just leaves the picker empty and raw ids showing in place
@@ -94,21 +99,29 @@ export const WorkoutsPage = ({
         className="w-full mb-4 rounded-lg border border-white/10 bg-[#0d1220]/70 text-white px-3 py-2 text-sm backdrop-blur-md focus:outline-none focus:border-blue-400"
       />
 
-      {filteredWorkouts.length === 0 ? (
-        <p className="text-gray-400 text-sm">Nessun workout trovato.</p>
-      ) : (
-        <WorkoutList workouts={filteredWorkouts} exerciseNames={exerciseNames} onEdit={openEditForm} />
-      )}
+      {isLoading &&
+        <p className="text-gray-400 text-sm">Caricamento in corso.</p>
+      }
 
-      {isFormOpen && (
-        <WorkoutForm
-          ownerId={user!.id}
-          exercises={exercises}
-          initialWorkout={editingWorkout}
-          onClose={closeForm}
-          onSaved={refreshWorkouts}
-        />
-      )}
+      {!isLoading &&
+        <div>
+          {filteredWorkouts.length === 0 ? (
+            <p className="text-gray-400 text-sm">Nessun workout trovato.</p>
+          ) : (
+            <WorkoutList workouts={filteredWorkouts} exerciseNames={exerciseNames} onEdit={openEditForm} />
+          )}
+
+          {isFormOpen && (
+            <WorkoutForm
+              ownerId={user!.id}
+              exercises={exercises}
+              initialWorkout={editingWorkout}
+              onClose={closeForm}
+              onSaved={refreshWorkouts}
+            />
+          )}
+        </div>
+      }
     </div>
   );
 };

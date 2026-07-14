@@ -33,15 +33,15 @@ export const WorkoutCard = ({
       <h3 className="text-left font-bold text-md text-white mb-2 pr-6 truncate">{workout.name}</h3>
 
       {/* Lista Esercizi - Senza punti, molto compatta */}
-      <div className="text-left text-xs text-gray-400 mb-3 truncate">
-        <span className="font-semibold text-gray-300">{workout.exercises.length} esercizi: </span>
-        <br></br>
-
-        {workout.exercises.map((entry,idx) => (
-          <span key={entry.exerciseId}>
-            {exerciseNames[entry.exerciseId] ?? entry.exerciseId}{idx < workout.exercises.length - 1 ? ' - ' : ''}
-          </span>
-        ))}
+      <div className="text-left text-xs text-gray-400 mb-3">
+        <div className="font-semibold text-gray-300 truncate">{workout.exercises.length} esercizi: </div>
+        <div className="truncate">
+          {workout.exercises.map((entry,idx) => (
+            <span key={entry.exerciseId}>
+              {exerciseNames[entry.exerciseId] ?? entry.exerciseId}{idx < workout.exercises.length - 1 ? ' - ' : ''}
+            </span>
+          ))}
+        </div>
       </div>
 
       {/* Footer schiacciato */}
