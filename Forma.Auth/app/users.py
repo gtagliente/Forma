@@ -10,7 +10,7 @@ from fastapi_users.authentication import (
 from fastapi_users.db import SQLAlchemyUserDatabase
 from app.db import User, get_user_db
 
-SECRET = "sakjdhkjad872323"
+SECRET = "669ef35935a874a37acd951406a52c18b4c3101b9dbb008d5e70287a75c0fa55"
 
 
 class UserManager(UUIDIDMixin, BaseUserManager[User, uuid.UUID]):
