@@ -41,7 +41,11 @@ export const ExerciseItem = ({ exercise: initialExercise }: { exercise: WorkoutE
           <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-lg ${visualClassName}`}>
             <VisualIcon size={18} />
           </span>
-          <span className="font-semibold text-sm">{initialExercise.name}</span>
+          {initialExercise.name ? (
+            <span className="font-semibold text-sm">{initialExercise.name}</span>
+          ) : (
+            <span className="h-4 w-32 rounded bg-gray-700 animate-pulse" />
+          )}
         </span>
         <ChevronDown size={18} className={`text-gray-400 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
       </button>

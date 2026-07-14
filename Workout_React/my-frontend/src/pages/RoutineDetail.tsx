@@ -35,12 +35,14 @@ export const RoutineDetail = () => {
       setIsLoading(true);
       setError(null);
       try {
-        const [routinesResult, workoutsResult] = await Promise.all([
+        const [routinesResult, workoutsResult, exercisesResult] = await Promise.all([
           getAllRoutines(user.id),
           listWorkouts(user.id),
+          listExercises()
         ]);
         setRoutines(routinesResult);
         setWorkouts(workoutsResult);
+        setExercises(exercisesResult);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Something went wrong.');
       } finally {
@@ -52,19 +54,6 @@ export const RoutineDetail = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user?.id]);
 
-    useEffect(() => {
-      const load = async () => {
-        try {
-          const result = await listExercises();
-          setExercises(result);
-        } catch {
-          // Exercise-name lookup/picker is a display nicety here - a failed
-          // fetch just leaves the picker empty and raw ids showing in place
-          // of names below.
-        }
-      };
-      void load();
-    }, []);
   
     const exerciseNames = useMemo(
       () => Object.fromEntries(exercises.map((ex) => [ex.id, ex.name ?? ex.id])),

@@ -24,6 +24,8 @@ export const WorkoutDetail = ({
   const { user } = useAuth();
   const [exercises, setExercises] = useState<Exercise[]>([]);
   const [isFormOpen, setIsFormOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
 
   // Own fetch of the FT-002 exercise list: WorkoutDetail can be reached
   // directly (its own route), not only via WorkoutsPage, and there's no
@@ -32,11 +34,14 @@ export const WorkoutDetail = ({
   useEffect(() => {
     const load = async () => {
       try {
+        setIsLoading(true);
         const result = await listExercises();
         setExercises(result);
       } catch {
         // Exercise-name lookup is a display nicety - a failed fetch just
         // leaves raw ids showing in place of names below.
+      } finally {
+        setIsLoading(false);
       }
     };
     void load();
@@ -68,7 +73,7 @@ export const WorkoutDetail = ({
   // WorkoutCard's decorative Pencil icon before this feature.
   const displayExercises: WorkoutExercise[] = workout.exercises.map((entry) => ({
     id: entry.exerciseId,
-    name: exerciseNames[entry.exerciseId] ?? entry.exerciseId,
+    name: exerciseNames[entry.exerciseId] ?? null,
     muscleGroups: exerciseMuscleGroups[entry.exerciseId],
     sets: Array.from({ length: entry.sets }, (_, i): ExerciseSet => ({
       id: `${entry.exerciseId}-${i}`,
@@ -101,22 +106,28 @@ export const WorkoutDetail = ({
         <p className="text-xs text-gray-400 mt-1">{displayExercises.length} esercizi</p>
       </div>
 
-      {/* Lista degli esercizi (Accordion) */}
-      <div className="grid gap-2">
-        {displayExercises.map(ex => (
-          <ExerciseItem key={ex.id} exercise={ex} />
-        ))}
-      </div>
+      {isLoading && <div className="text-white p-8">Caricamento...</div>}
 
-      {isFormOpen && (
-        <WorkoutForm
-          ownerId={user!.id}
-          exercises={exercises}
-          initialWorkout={workout}
-          onClose={() => setIsFormOpen(false)}
-          onSaved={refreshWorkouts}
-        />
-      )}
-    </div>
+      {!isLoading &&
+        <div>
+          {/* Lista degli esercizi (Accordion) */}
+          <div className="grid gap-2">
+            {displayExercises.map(ex => (
+              <ExerciseItem key={ex.id} exercise={ex} />
+            ))}
+          </div>
+
+          {isFormOpen && (
+            <WorkoutForm
+              ownerId={user!.id}
+              exercises={exercises}
+              initialWorkout={workout}
+              onClose={() => setIsFormOpen(false)}
+              onSaved={refreshWorkouts}
+            />
+          )}
+        </div>
+      }
+    </div >
   );
 };

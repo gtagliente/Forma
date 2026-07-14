@@ -47,7 +47,10 @@ export interface ExerciseSet {
 // Session feature, not repurposed as the Workout-composition type.
 export interface WorkoutExercise {
   id: string;
-  name: string;
+  // null means the name lookup hasn't resolved yet (or the id has no match) -
+  // ExerciseItem/WorkoutCard render a loading skeleton in that case, never
+  // the raw id, so a not-yet-loaded exerciseNames map never leaks to the UI.
+  name: string | null;
   sets: ExerciseSet[];
   // Display-only: lets ExerciseItem pick a representative icon. Not part of
   // any wire contract - WorkoutDetail fills it in from its own exercise

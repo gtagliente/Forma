@@ -36,9 +36,13 @@ export const WorkoutCard = ({
       <div className="text-left text-xs text-gray-400 mb-3">
         <div className="font-semibold text-gray-300 truncate">{workout.exercises.length} esercizi: </div>
         <div className="truncate">
-          {workout.exercises.map((entry,idx) => (
+          {workout.exercises.map((entry, idx) => (
             <span key={entry.exerciseId}>
-              {exerciseNames[entry.exerciseId] ?? entry.exerciseId}{idx < workout.exercises.length - 1 ? ' - ' : ''}
+              {exerciseNames[entry.exerciseId] ? (
+                <>{exerciseNames[entry.exerciseId]}{idx < workout.exercises.length - 1 ? ' - ' : ''}</>
+              ) : (
+                <span className="inline-block h-3 w-12 rounded bg-gray-700 animate-pulse align-middle" />
+              )}
             </span>
           ))}
         </div>
