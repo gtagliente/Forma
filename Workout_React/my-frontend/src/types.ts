@@ -49,6 +49,10 @@ export interface WorkoutExercise {
   id: string;
   name: string;
   sets: ExerciseSet[];
+  // Display-only: lets ExerciseItem pick a representative icon. Not part of
+  // any wire contract - WorkoutDetail fills it in from its own exercise
+  // lookup (same one used for exerciseNames).
+  muscleGroups?: MuscleGroup[] | null;
 }
 
 export type MuscleGroup = 'Chest' | 'Back' | 'Legs' | 'Shoulders' | 'Arms' | 'Core' | 'FullBody';

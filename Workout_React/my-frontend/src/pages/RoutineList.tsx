@@ -53,12 +53,18 @@ export const RoutineList = () => {
   // post-create refetch (no created-routine detail comes back beyond `id`,
   // same refetch-after-write pattern FT-003 established for addnewversion).
   useEffect(() => {
+    console.log('load Routines')
     const load = async () => {
+      console.log('load Routines async')
       await loadAll();
     };
     void load();
+    // Keyed on user.id, not the user object: AuthContext's hydrate effect
+    // sets a freshly-parsed user object on every call (StrictMode's
+    // dev-only double-invoke included), so a [user] dep would re-fire this
+    // fetch on every reference change even when the id hasn't changed.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [user]);
+  }, [user?.id]);
 
   const workoutsById = useMemo(() => new Map(workouts.map((w) => [w.id, w])), [workouts]);
 
@@ -74,7 +80,7 @@ export const RoutineList = () => {
     routine.entries.reduce((sum, e) => sum + (workoutsById.get(e.workoutId)?.exercises.length ?? 0), 0);
 
   return (
-    <div className="p-4 max-w-screen-xl min-h-screen bg-gray-950">
+    <div className="p-4 max-w-screen-xl min-h-screen">
       <div className="flex items-center justify-between mb-4">
         <h1 className="text-white font-bold text-xl">Le tue Schede</h1>
         <button
@@ -90,7 +96,7 @@ export const RoutineList = () => {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Cerca per nome..."
-        className="w-full mb-4 rounded-lg border border-gray-600 bg-gray-900 text-white px-3 py-2 text-sm focus:outline-none focus:border-blue-400"
+        className="w-full mb-4 rounded-lg border border-white/10 bg-[#0d1220]/70 text-white px-3 py-2 text-sm backdrop-blur-md focus:outline-none focus:border-blue-400"
       />
 
       {isFormOpen && (

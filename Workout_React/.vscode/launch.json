@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Debug Vite App (Chrome)",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/my-frontend",
+      "preLaunchTask": "vite: dev"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Debug Vite App (Preview - Production Build)",
+      "url": "http://localhost:4173",
+      "webRoot": "${workspaceFolder}/my-frontend",
+      "preLaunchTask": "vite: preview"
+    }
+  ]
+}

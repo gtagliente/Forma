@@ -289,7 +289,9 @@ function AppContent() {
       // Best-effort: a failed refresh just leaves the previous in-memory
       // list in place rather than clearing the screen.
     }
-  }, [user]);
+    // Keyed on user.id, not the user object - see RoutineList.tsx for why.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user?.id]);
 
   useEffect(() => {
     const load = async () => {

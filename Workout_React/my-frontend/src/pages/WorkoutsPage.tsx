@@ -73,7 +73,7 @@ export const WorkoutsPage = ({
   };
 
   return (
-    <div className="p-4 max-w-screen-xl min-h-screen bg-gray-950 text-white">
+    <div className="p-4 max-w-screen-xl min-h-screen text-white">
       <div className="flex items-center justify-between mb-4">
         <h1 className="font-bold text-xl flex items-center gap-2">
           <Dumbbell size={20} /> I tuoi Workout
@@ -91,7 +91,7 @@ export const WorkoutsPage = ({
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         placeholder="Cerca per nome..."
-        className="w-full mb-4 rounded-lg border border-gray-600 bg-gray-900 text-white px-3 py-2 text-sm focus:outline-none focus:border-blue-400"
+        className="w-full mb-4 rounded-lg border border-white/10 bg-[#0d1220]/70 text-white px-3 py-2 text-sm backdrop-blur-md focus:outline-none focus:border-blue-400"
       />
 
       {filteredWorkouts.length === 0 ? (

@@ -20,40 +20,38 @@ export const WorkoutCard = ({
   return (
     <Link
       to={`/workout/${workout.id}`}
-      className="max-w-screen-xl block border border-gray-600 rounded-lg p-3 shadow-sm hover:border-gray-400 transition-all bg-gray-800 group relative"
+      className="max-w-screen-xl block rounded-xl border border-white/10 bg-[#0d1220]/70 p-4 shadow-[0_4px_20px_rgba(0,0,0,0.25)] backdrop-blur-md transition-all hover:border-blue-400/40 hover:shadow-[0_8px_30px_rgba(0,0,0,0.4)] group relative"
     >
       {/* Icona Modifica - più piccola e compatta */}
       <div
-        className="absolute top-3 right-3 text-gray-500 group-hover:text-white transition-colors"
+        className="absolute top-4 right-4 text-gray-500 group-hover:text-white transition-colors"
         onClick={onEdit ? (e) => { e.preventDefault(); onEdit(workout); } : undefined}
       >
         <Pencil size={18} strokeWidth={2.5} />
       </div>
       {/* Titolo */}
-      <h3 className="text-left font-bold text-md text-white mb-1 pr-6 pb-2 truncate">{workout.name}</h3>
+      <h3 className="text-left font-bold text-md text-white mb-2 pr-6 truncate">{workout.name}</h3>
 
       {/* Lista Esercizi - Senza punti, molto compatta */}
-      <div className=" text-left text-xs text-gray-400 mb-2 truncate">
+      <div className="text-left text-xs text-gray-400 mb-3 truncate">
         <span className="font-semibold text-gray-300">{workout.exercises.length} esercizi: </span>
         <br></br>
 
         {workout.exercises.map((entry,idx) => (
-          <>
-            <span key={entry.exerciseId}>
+          <span key={entry.exerciseId}>
             {exerciseNames[entry.exerciseId] ?? entry.exerciseId}{idx < workout.exercises.length - 1 ? ' - ' : ''}
           </span>
-          </>
         ))}
       </div>
 
       {/* Footer schiacciato */}
-      <div className="pt-2 border-t border-gray-700 flex justify-start">
+      <div className="pt-2 border-t border-white/10 flex justify-start">
         <button
           onClick={(e) => {
             e.preventDefault();
             alert('Condividi!');
           }}
-          className="text-[10px] uppercase font-bold text-pink-400 hover:text-pink-300 flex items-center gap-1"
+          className="text-[10px] uppercase font-bold text-pink-400 hover:text-pink-300 flex items-center gap-1 transition-colors"
         >
           <Share2 size={12} /> {/* Icona Share */}
 

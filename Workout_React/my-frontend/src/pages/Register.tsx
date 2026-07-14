@@ -29,8 +29,8 @@ export const Register = () => {
   const isDisabled = isSubmitting || email.trim() === '' || password === '';
 
   return (
-    <div className="p-4 max-w-screen-xl min-h-screen bg-gray-950 flex items-center justify-center">
-      <div className="w-full max-w-sm border border-gray-600 rounded-lg p-6 bg-gray-800">
+    <div className="p-4 max-w-screen-xl min-h-screen flex items-center justify-center">
+      <div className="w-full max-w-sm rounded-2xl border border-white/10 bg-[#0d1220]/80 p-6 shadow-[0_8px_30px_rgba(0,0,0,0.45)] backdrop-blur-xl">
         <h1 className="text-white font-bold text-xl mb-4">Register</h1>
 
         <form onSubmit={handleSubmit} className="grid gap-3">

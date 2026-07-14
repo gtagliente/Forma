@@ -1,11 +1,12 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import type { Routine, Workout } from '../types';
+import type { Exercise, Routine, Workout } from '../types';
 import { WorkoutCard } from '../components/Workout/WorkoutCard';
 import { ArrowLeft } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { getAllRoutines } from '../lib/api/routineApi';
 import { listWorkouts } from '../lib/api/workoutApi';
+import { listExercises } from '../lib/api/exerciseApi';
 
 // FT-004: no per-id GET exists for a Routine (confirmed against the
 // contract) - this page still resolves via .find() against the full
@@ -22,6 +23,8 @@ export const RoutineDetail = () => {
   const [workouts, setWorkouts] = useState<Workout[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [exercises, setExercises] = useState<Exercise[]>([]);
+  
 
   useEffect(() => {
     const load = async () => {
@@ -45,8 +48,29 @@ export const RoutineDetail = () => {
       }
     };
     void load();
-  }, [user]);
+    // Keyed on user.id, not the user object - see RoutineList.tsx for why.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user?.id]);
 
+    useEffect(() => {
+      const load = async () => {
+        try {
+          const result = await listExercises();
+          setExercises(result);
+        } catch {
+          // Exercise-name lookup/picker is a display nicety here - a failed
+          // fetch just leaves the picker empty and raw ids showing in place
+          // of names below.
+        }
+      };
+      void load();
+    }, []);
+  
+    const exerciseNames = useMemo(
+      () => Object.fromEntries(exercises.map((ex) => [ex.id, ex.name ?? ex.id])),
+      [exercises],
+    );
+    
   const workoutsById = useMemo(() => new Map(workouts.map((w) => [w.id, w])), [workouts]);
 
   const routine = routines.find(r => r.id === id);
@@ -74,8 +98,9 @@ export const RoutineDetail = () => {
     return <div className="text-white p-8">Routine non trovata</div>;
   }
 
+  
   return (
-    <div className="p-4 max-w-screen-xl min-h-screen bg-gray-950">
+    <div className="p-4 max-w-screen-xl min-h-screen">
       {/* Header con tasto Indietro */}
       <div className="mb-6">
         <Link to="/" className="flex items-center text-gray-400 hover:text-white text-sm mb-4">
@@ -89,8 +114,10 @@ export const RoutineDetail = () => {
 
       {/* Lista dei Workout appartenenti a questa routine */}
       <div className="grid gap-3">
-        {resolvedWorkouts.map(w => (
-          <WorkoutCard key={w.id} workout={w} />
+        {resolvedWorkouts.map(workout => (
+        <WorkoutCard key={workout.id} workout={workout} exerciseNames={exerciseNames} />
+          
+          // <WorkoutCard key={w.id} workout={w} />
         ))}
       </div>
     </div>

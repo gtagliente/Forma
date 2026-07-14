@@ -47,6 +47,11 @@ export const WorkoutDetail = ({
     [exercises],
   );
 
+  const exerciseMuscleGroups = useMemo(
+    () => Object.fromEntries(exercises.map((ex) => [ex.id, ex.muscleGroups])),
+    [exercises],
+  );
+
   const workout = workouts.find(w => w.id === id);
 
   if (!workout) {
@@ -64,6 +69,7 @@ export const WorkoutDetail = ({
   const displayExercises: WorkoutExercise[] = workout.exercises.map((entry) => ({
     id: entry.exerciseId,
     name: exerciseNames[entry.exerciseId] ?? entry.exerciseId,
+    muscleGroups: exerciseMuscleGroups[entry.exerciseId],
     sets: Array.from({ length: entry.sets }, (_, i): ExerciseSet => ({
       id: `${entry.exerciseId}-${i}`,
       reps: entry.reps ?? 0,
@@ -73,12 +79,12 @@ export const WorkoutDetail = ({
   }));
 
   return (
-    <div className="p-4 max-w-screen-xl  min-h-screen bg-gray-950 text-white">
+    <div className="p-4 max-w-screen-xl min-h-screen text-white">
       {/* Bottone Indietro + Edit - a Workout is no longer necessarily
           reached through a Routine, so the back-link targets /workouts
           unconditionally instead of a derived routineId. */}
       <div className="flex items-center justify-between mb-6">
-        <Link to="/workouts" className="flex items-center text-gray-400 text-sm">
+        <Link to="/workouts" className="flex items-center text-gray-400 hover:text-white text-sm transition-colors">
           <ArrowLeft size={16} className="mr-1" /> Torna ai workout
         </Link>
         <button
@@ -89,7 +95,11 @@ export const WorkoutDetail = ({
         </button>
       </div>
 
-      <h1 className="text-2xl font-bold mb-6">{workout.name}</h1>
+      <div className="mb-6 rounded-2xl border border-white/10 bg-[#0d1220]/70 p-5 shadow-[0_8px_30px_rgba(0,0,0,0.35)] backdrop-blur-xl">
+        <span className="text-[10px] font-bold uppercase tracking-wide text-blue-400">Workout</span>
+        <h1 className="text-2xl font-bold mt-1">{workout.name}</h1>
+        <p className="text-xs text-gray-400 mt-1">{displayExercises.length} esercizi</p>
+      </div>
 
       {/* Lista degli esercizi (Accordion) */}
       <div className="grid gap-2">

@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import type { WorkoutExercise, ExerciseSet } from '../../types';
 import { ChevronDown, Plus, Minus, Settings2 } from 'lucide-react';
+import { getExerciseVisual } from '../../utils/muscleGroupVisuals';
 
 export const ExerciseItem = ({ exercise: initialExercise }: { exercise: WorkoutExercise }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [sets, setSets] = useState<ExerciseSet[]>(initialExercise.sets);
+  const { icon: VisualIcon, className: visualClassName } = getExerciseVisual(initialExercise.muscleGroups);
   const [showGenericRest, setShowGenericRest] = useState(false);
   // Aggiungi questi stati insieme a quelli esistenti
   const [showMenu, setShowMenu] = useState(false);
@@ -22,7 +24,7 @@ export const ExerciseItem = ({ exercise: initialExercise }: { exercise: WorkoutE
   };
 
   return (
-    <div className="relative bg-gray-800 border border-gray-700 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+    <div className="relative bg-gray-800 border border-gray-700 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
       {showMenu && (
         <div
           className="absolute inset-0 z-40 bg-black/50 backdrop-blur-[2px] transition-all"
@@ -35,12 +37,20 @@ export const ExerciseItem = ({ exercise: initialExercise }: { exercise: WorkoutE
         onClick={() => setIsOpen(!isOpen)}
         className="w-full p-4 flex justify-between items-center text-white hover:bg-gray-700/50 transition-colors"
       >
-        <span className="font-semibold text-sm">{initialExercise.name}</span>
+        <span className="flex items-center gap-3">
+          <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-lg ${visualClassName}`}>
+            <VisualIcon size={18} />
+          </span>
+          <span className="font-semibold text-sm">{initialExercise.name}</span>
+        </span>
         <ChevronDown size={18} className={`text-gray-400 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
       </button>
 
-      {/* Transizione morbida */}
-      <div className={`grid transition-all duration-300 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
+      {/* Transizione morbida - solo le proprietà che cambiano davvero
+          animano (grid-template-rows + opacity), invece di transition-all,
+          così l'apertura non "sobbalza" per via di altre transizioni
+          (box-shadow, colori) innescate dallo stesso re-render. */}
+      <div className={`grid transition-[grid-template-rows,opacity] duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
         <div className="overflow-hidden">
           <div className="p-4 border-t border-gray-700/50 bg-gray-900/50">
 
@@ -104,18 +114,21 @@ export const ExerciseItem = ({ exercise: initialExercise }: { exercise: WorkoutE
 
 
 
-            {/* Lista Set */}
+            {/* Lista Set - la key va sull'elemento radice restituito da map
+                (prima era su un <div> annidato dentro un <> senza key: React
+                non riusciva a riconciliare le righe e ricreava gli input a
+                ogni render, causando lo sfarfallio). */}
             {sets.map((set, idx) => (
-              <>
+              <div key={set.id}>
                 <span className="pl-10 mb-2 text-left font-bold text-gray-500 text-xs w-full block">S{idx + 1}</span>
-                <div key={set.id} className={`grid gap-2 mb-2 text-sm items-center ${showGenericRest ? 'grid-cols-2' : 'grid-cols-3'}`}>
-                  <input type="number" defaultValue={set.reps} className="bg-gray-950 border border-gray-600 p-2 rounded-lg text-white focus:border-blue-500 outline-none transition-all" placeholder="Reps" />
-                  <input type="number" defaultValue={0} className="bg-gray-950 border border-gray-600 p-2 rounded-lg text-white focus:border-blue-500 outline-none transition-all" placeholder="Durata" />
+                <div className={`grid gap-2 mb-2 text-sm items-center ${showGenericRest ? 'grid-cols-2' : 'grid-cols-3'}`}>
+                  <input type="number" defaultValue={set.reps} className="bg-gray-950 border border-gray-600 p-2 rounded-lg text-white focus:border-blue-500 outline-none transition-colors" placeholder="Reps" />
+                  <input type="number" defaultValue={0} className="bg-gray-950 border border-gray-600 p-2 rounded-lg text-white focus:border-blue-500 outline-none transition-colors" placeholder="Durata" />
                   {!showGenericRest && (
-                    <input type="number" defaultValue={set.pauseSeconds} className="bg-gray-950 border border-gray-600 p-2 rounded-lg text-white focus:border-blue-500 outline-none transition-all col-span-1" placeholder="Pause" />
+                    <input type="number" defaultValue={set.pauseSeconds} className="bg-gray-950 border border-gray-600 p-2 rounded-lg text-white focus:border-blue-500 outline-none transition-colors col-span-1" placeholder="Pause" />
                   )}
                 </div>
-              </>
+              </div>
             ))}
 
             {/* Recupero Generico */}

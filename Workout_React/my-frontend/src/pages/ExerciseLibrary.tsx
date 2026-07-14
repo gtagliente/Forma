@@ -111,7 +111,7 @@ export const ExerciseLibrary = () => {
   };
 
   return (
-    <div className="p-4 max-w-screen-xl min-h-screen bg-gray-950 text-white">
+    <div className="p-4 max-w-screen-xl min-h-screen text-white">
       <div className="flex items-center justify-between mb-4">
         <h1 className="font-bold text-xl flex items-center gap-2">
           <Dumbbell size={20} /> Libreria Esercizi
